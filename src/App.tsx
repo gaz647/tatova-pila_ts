@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import PageSection from "./components/PageSection";
-import pages from "./assets/data";
+import data from "./assets/data";
 import { useState } from "react";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="container" onScroll={(e) => handleScroll(e)}>
       <Navbar visibleContainerId={visibleContainerId} />
 
-      {pages.map((onePage) => {
+      {data.map((onePage) => {
         return (
           <PageSection
             key={onePage.id}
