@@ -1,14 +1,26 @@
 import "./Navbar.css";
 import pages from "../assets/data";
 
-const Navbar = () => {
+interface NavbarProps {
+  visibleContainerId: number;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ visibleContainerId }) => {
   return (
     <nav className="navbar">
       <ul>
         {pages.map((onePage) => {
           return (
             <li key={onePage.id}>
-              <a href={`#${onePage.id}`}>{onePage.title}</a>
+              <a
+                className={`${
+                  visibleContainerId.toString() === onePage.id &&
+                  "navbar-active"
+                }`}
+                href={`#${onePage.id}`}
+              >
+                {onePage.title}
+              </a>
             </li>
           );
         })}

@@ -26,8 +26,13 @@
   color: lightgray;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 0.2rem 0;
 }
 
 .navbar ul li a:hover {
   color: yellow;
+}
+
+.navbar-active {
+  border-bottom: 1px solid yellow;
 }
