@@ -8,62 +8,40 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ visibleContainerId }) => {
-  const isMobile = window.innerWidth <= 580;
-
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <>
-      {!isMobile ? (
-        <nav className="navbar">
-          <ul>
-            {pages.map((onePage) => {
-              return (
-                <li key={onePage.id}>
-                  <a
-                    className={`${
-                      visibleContainerId.toString() === onePage.id &&
-                      "navbar-active"
-                    }`}
-                    href={`#${onePage.id}`}
-                  >
-                    {onePage.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      ) : (
-        <nav className="navbar-mobile">
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-logo-container">
+          <div className="navbar-logo">Tátova pila</div>
           <div
             className="navbar-mobile-icon-container"
             onClick={() => setIsVisible(!isVisible)}
           >
             <RxHamburgerMenu className="navbar-mobile-icon" />
           </div>
-          {isVisible && (
-            <ul>
-              {pages.map((onePage) => {
-                return (
-                  <li key={onePage.id}>
-                    <a
-                      className={`${
-                        visibleContainerId.toString() === onePage.id &&
-                        "navbar-active"
-                      }`}
-                      href={`#${onePage.id}`}
-                    >
-                      {onePage.title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </nav>
-      )}
-    </>
+        </div>
+
+        <ul className={`navbar-ul ${isVisible && "navbar-ul-visible"}`}>
+          {pages.map((onePage) => {
+            return (
+              <li className="navbar-ul-li" key={onePage.id}>
+                <a
+                  className={`navbar-ul-li-a ${
+                    visibleContainerId.toString() === onePage.id &&
+                    "navbar-active"
+                  }`}
+                  href={`#${onePage.id}`}
+                >
+                  {onePage.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </nav>
   );
 };
 
