@@ -2,21 +2,40 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import PageSection from "./components/PageSection";
 // import data from "./assets/data";
-import { useState } from "react";
+
 import AboutUs from "./components/AboutUs";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [visibleContainerId, setVisibleContainerId] = useState(0);
+  const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
-  const handleScroll = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
-    setVisibleContainerId(Math.floor(e.currentTarget.scrollTop / 100 / 6));
-    // console.log(visibleContainerId);
-    console.log(Math.floor(e.currentTarget.scrollTop / 100));
-  };
+  useEffect(() => {
+    const pageSections = document.querySelectorAll(".section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setCurrentVisiblePageId(entry.target.id);
+        });
+      },
+      {
+        threshold: 1,
+      }
+    );
+
+    pageSections.forEach((pageSection) => {
+      observer.observe(pageSection);
+    });
+
+    return () => {
+      pageSections.forEach((pageSection) => {
+        observer.unobserve(pageSection);
+      });
+    };
+  }, []);
 
   return (
-    <div className="container" onScroll={(e) => handleScroll(e)}>
-      <Navbar visibleContainerId={visibleContainerId} />
+    <div className="container">
+      <Navbar currentVisiblePageId={currentVisiblePageId} />
       <PageSection id={"0"} image={"/page0.jpg"}>
         <AboutUs />
       </PageSection>

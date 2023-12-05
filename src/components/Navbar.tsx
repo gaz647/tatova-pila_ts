@@ -1,13 +1,13 @@
 import "./Navbar.css";
-import pages from "../assets/data";
+import data from "../assets/data";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 interface NavbarProps {
-  visibleContainerId: number;
+  currentVisiblePageId: string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ visibleContainerId }) => {
+const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
@@ -24,12 +24,12 @@ const Navbar: React.FC<NavbarProps> = ({ visibleContainerId }) => {
         </div>
 
         <ul className={`navbar-ul ${isVisible && "navbar-ul-visible"}`}>
-          {pages.map((onePage) => {
+          {data.map((onePage) => {
             return (
               <li className="navbar-ul-li" key={onePage.id}>
                 <a
                   className={`navbar-ul-li-a ${
-                    visibleContainerId.toString() === onePage.id &&
+                    currentVisiblePageId.toString() === onePage.id &&
                     "navbar-active"
                   }`}
                   href={`#${onePage.id}`}
