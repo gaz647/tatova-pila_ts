@@ -23,7 +23,7 @@ const data = [
   {
     id: "3",
     title: "Kontakt",
-    text: "Lorem ipsum dolores clan",
+    text: "Honza 721223677, Michal 608416830",
     // image: "./src/assets/pictures/page4.jpg",
     image: "/page4.jpg",
   },
