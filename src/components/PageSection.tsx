@@ -1,18 +1,13 @@
 import "./PageSection.css";
+import { ReactNode } from "react";
 
 interface PageSectionProps {
   id: string;
-  title: string;
-  text: string;
   image: string;
+  children?: ReactNode;
 }
 
-const PageSection: React.FC<PageSectionProps> = ({
-  id,
-  title,
-  text,
-  image,
-}) => {
+const PageSection: React.FC<PageSectionProps> = ({ id, image, children }) => {
   const sectionStyle = {
     backgroundImage: `url(${image})`,
     backgroundRepeat: "no-repeat",
@@ -21,8 +16,7 @@ const PageSection: React.FC<PageSectionProps> = ({
   };
   return (
     <section id={id} style={sectionStyle}>
-      <div className="page-section-title">{title}</div>
-      <div className="page-section-text">{text}</div>
+      {children}
     </section>
   );
 };
