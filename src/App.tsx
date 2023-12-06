@@ -36,18 +36,10 @@ function App() {
   return (
     <div className="container">
       <Navbar currentVisiblePageId={currentVisiblePageId} />
-      <PageSection id={"0"} image={"/page0.jpg"}>
-        <AboutUs />
-      </PageSection>
-      <PageSection id={"1"} image={"/page1.jpg"}>
-        <AboutUs />
-      </PageSection>
-      <PageSection id={"2"} image={"/page2.jpg"}>
-        <AboutUs />
-      </PageSection>
-      <PageSection id={"3"} image={"/page3.jpg"}>
-        <AboutUs />
-      </PageSection>
+      <PageSection id={"0"} image={"/page0.jpg"}></PageSection>
+      <PageSection id={"1"} image={"/page1.jpg"}></PageSection>
+      <PageSection id={"2"} image={"/page2.jpg"}></PageSection>
+      <PageSection id={"3"} image={"/page3.jpg"}></PageSection>
     </div>
   );
 }
