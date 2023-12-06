@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import PageSection from "./components/PageSection";
 // import data from "./assets/data";
 
-import AboutUs from "./components/AboutUs";
+// import AboutUs from "./components/AboutUs";
 import { useState, useEffect } from "react";
 
 function App() {
