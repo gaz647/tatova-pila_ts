@@ -25,3 +25,25 @@ section {
   text-align: center; */
   scroll-snap-align: center;
 }
+
+.text-container {
+  padding: 1rem;
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  background-color: rgba(87, 102, 102, 0.64);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: whitesmoke;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  overflow: scroll;
+}
+
+.text-container-text {
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+.first-letter {
+  font-size: 1.7rem;
+}

@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import PageSection from "./components/PageSection";
+import AboutUs from "./pages/AboutUs";
 // import data from "./assets/data";
 
 // import AboutUs from "./components/AboutUs";
@@ -36,10 +37,14 @@ function App() {
   return (
     <div className="container">
       <Navbar currentVisiblePageId={currentVisiblePageId} />
-      <PageSection id={"0"} image={"/page0.jpg"}></PageSection>
-      <PageSection id={"1"} image={"/page1.jpg"}></PageSection>
-      <PageSection id={"2"} image={"/page2.jpg"}></PageSection>
-      <PageSection id={"3"} image={"/page3.jpg"}></PageSection>
+      <PageSection id={"0"} image={"/aboutUs.jpg"}>
+        <AboutUs />
+      </PageSection>
+      <PageSection id={"1"} image={"/whatWeDo.jpg"}></PageSection>
+      <PageSection id={"2"} image={"/whereWeWork.jpg"}></PageSection>
+      <PageSection id={"3"} image={"/whatWeDontDo.jpg"}></PageSection>
+      <PageSection id={"4"} image={"/whoWeMet.jpg"}></PageSection>
+      <PageSection id={"5"} image={"/contactUs.jpg"}></PageSection>
     </div>
   );
 }
