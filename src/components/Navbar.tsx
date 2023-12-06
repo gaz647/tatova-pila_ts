@@ -2,6 +2,7 @@ import "./Navbar.css";
 import data from "../assets/data";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Logo from "../assets/pictures/Logo.png";
 
 interface NavbarProps {
   currentVisiblePageId: string;
@@ -14,7 +15,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo-container">
-          <div className="navbar-logo">Tátova pila</div>
+          <img src={Logo} alt="logo" className="navbar-logo" />
+
           <div
             className="navbar-mobile-icon-container"
             onClick={() => setIsVisible(!isVisible)}

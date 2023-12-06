@@ -39,12 +39,9 @@
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
   padding: 0 3rem;
-  text-align: center;
+  width: 35%;
+  margin: 0.2rem;
 }
 
 .navbar-ul {
