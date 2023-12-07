@@ -2,7 +2,7 @@ import "./AboutUs.css";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="about-us">
+    <section className="page-section about-us">
       <div className="text-container">
         <h1>Jsme pilaři a jsme z Litomyšle</h1>
         <br />
@@ -44,7 +44,7 @@ const AboutUs: React.FC = () => {
         <h3>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám {`:)`}</h3>
         <h3>Vaše Tátova Pila</h3>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,69 +3,38 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  min-height: 2.5rem;
   background-color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 0.5rem;
-}
-
-.navbar-container {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-@media screen and (max-width: 1050px) {
-  .navbar-container {
-    flex-direction: column;
-  }
+  padding: 0.5rem;
 }
 
 .navbar-logo-container {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-}
-
-@media screen and (max-width: 1050px) {
-  .navbar-logo-container {
-    position: relative;
-    padding: 1rem;
-  }
+  position: relative;
+  background-color: rgba(0, 255, 255, 0.068);
 }
 
 .navbar-logo {
   height: 40px;
-  margin: 0.2rem;
 }
 
 .navbar-ul {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style-type: none;
   flex-wrap: wrap;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar-ul {
-    display: none;
-  }
-}
-
-.navbar-ul-visible {
-  display: flex;
-  flex-direction: column;
+  /* background-color: bisque; */
 }
 
 .navbar-ul-li {
-  margin: 0 1rem;
-  padding: 1rem;
+  margin: 0 0.6rem;
+  padding: 0.5rem;
 }
 
 .navbar-ul-li-a {
@@ -73,7 +42,6 @@
   color: lightgray;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 0.2rem 0;
 }
 
 .navbar-ul-li-a:hover {
@@ -87,23 +55,51 @@
 
 .navbar-mobile-icon-container {
   display: none;
+
+  background-color: rgba(134, 69, 199, 0.623);
 }
 
-@media screen and (max-width: 600px) {
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1065px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-ul {
+    padding-top: 0.5rem;
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-logo-container {
+    width: 100%;
+    justify-content: center;
+    /* margin-bottom: 1rem; */
+  }
+
   .navbar-mobile-icon-container {
+    display: block;
+    height: 100%;
+    /* height: 2rem; */
+    width: 2.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    padding: 1rem;
+  }
+
+  .navbar-mobile-icon {
+    display: block;
+    font-size: 1.3rem;
+    color: lightgray;
   }
 }
 
-.navbar-mobile-icon {
-  display: block;
-  font-size: 2rem;
-  color: lightgray;
+.navbar-ul-visible {
+  display: flex;
+  flex-direction: column;
 }
