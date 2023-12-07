@@ -18,8 +18,8 @@ const AboutUs: React.FC = () => {
           </li>
           <br />
           <li>
-            Naší podmínkou je minimální množství kulatiny 5cbm v délce 1.5-6m,
-            do průměru 65cm.
+            Jedinoou naší podmínkou je minimální množství kulatiny 5cbm v délce
+            1.5-6m, do průměru 65cm a elektrická zásuvka na 380V.
           </li>
           <br />
           <li>Nemáte les? nevadí! Dodáme vám z vlastního!</li>
