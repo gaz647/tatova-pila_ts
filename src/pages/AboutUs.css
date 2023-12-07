@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+.text-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 .text-container h1,
 h3 {
   display: block;
