@@ -2,7 +2,7 @@ import "./AboutUs.css";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="page about-us">
+    <section className="section-container about-us">
       <div className="text-container">
         <h1>Jsme pilaři a jsme z Litomyšle</h1>
         <br />
