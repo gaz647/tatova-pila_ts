@@ -2,7 +2,7 @@ import "./AboutUs.css";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="page-section about-us">
+    <section className="page about-us">
       <div className="text-container">
         <h1>Jsme pilaři a jsme z Litomyšle</h1>
         <br />
@@ -18,14 +18,14 @@ const AboutUs: React.FC = () => {
           </li>
           <br />
           <li>
-            Jedinoou naší podmínkou je minimální množství kulatiny 5cbm v délce
+            Jedinou naší podmínkou je minimální množství kulatiny 5cbm v délce
             1.5-6m, do průměru 65cm a elektrická zásuvka na 380V.
           </li>
           <br />
           <li>Nemáte les? nevadí! Dodáme vám z vlastního!</li>
         </ul>
         <br />
-        <h3>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám {`:)`}</h3>
+        <p>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám {`:)`}</p>
         <h3>Vaše Tátova Pila</h3>
       </div>
     </section>

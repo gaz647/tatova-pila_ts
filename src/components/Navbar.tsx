@@ -11,8 +11,14 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const handleBlur = () => {
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 200);
+  };
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" onBlur={handleBlur} tabIndex={0}>
       <div className="navbar-logo-container">
         <img src={Logo} alt="logo" className="navbar-logo" />
         <div

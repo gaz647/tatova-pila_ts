@@ -15,7 +15,7 @@ const PageSection: React.FC<PageSectionProps> = ({ id, image, children }) => {
     backgroundSize: "cover",
   };
   return (
-    <section className="section" id={id} style={sectionStyle}>
+    <section id={id} style={sectionStyle}>
       {children}
     </section>
   );
