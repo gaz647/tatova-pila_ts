@@ -2,7 +2,7 @@ import "./Navbar.css";
 import data from "../assets/data";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Logo from "../assets/pictures/logo-white.png";
+import Logo from "../assets/pictures/logo-white-horizontal.png";
 
 interface NavbarProps {
   currentVisiblePageId: string;

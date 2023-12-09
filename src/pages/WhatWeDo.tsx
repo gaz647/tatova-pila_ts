@@ -10,7 +10,7 @@ const WhatWeDo = () => {
         Orientační ceník níže, přesto ale vše záleží na domluvě a individuálním
         přístupu. Způsob práce na pásové pile umožňuje širokou paletu možností
         pořezu, okamžitou variabilitu přímo v procesu. Řežeme kulatinu do délky
-        6m, so průměru 65cm. Za den jsme schopni pořezat 5-10cbm kulatiny, v
+        6m a průměru 65cm. Za den jsme schopni pořezat 5-10cbm kulatiny, v
         závislosti na způsobu pořezu a druhu řezané dřeviny.
       </div>
     </section>

@@ -1,0 +1,29 @@
+.contact-card-container {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 12px;
+  max-width: 40%;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.contact-card-image-container {
+  border-radius: 50px;
+  height: 3rem;
+  width: 3rem;
+  background-color: red;
+}
+
+.contact-card-image {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  border-radius: solid 3px black;
+}
+
+.contact-us-contact-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

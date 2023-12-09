@@ -24,3 +24,9 @@ h3 {
 .text-container ul li {
   margin-left: 1rem;
 }
+
+.greeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

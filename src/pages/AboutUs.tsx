@@ -1,4 +1,5 @@
 import "./AboutUs.css";
+import LogoCircle from "../assets/pictures/logo-white-circle.png";
 
 const AboutUs: React.FC = () => {
   return (
@@ -22,11 +23,18 @@ const AboutUs: React.FC = () => {
             1.5-6m, do průměru 65cm a elektrická zásuvka na 380V.
           </li>
           <br />
-          <li>Nemáte les? nevadí! Dodáme vám z vlastního!</li>
+          <li>Nemáte les? Nevadí! Dodáme vám z vlastního!</li>
         </ul>
         <br />
-        <p>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám {`:)`}</p>
-        <h3>Vaše Tátova Pila</h3>
+        <h3>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám {`:)`}</h3>
+        <div className="greeting-container">
+          <h3 className="greeting-vase">Vaše </h3>
+          <img
+            src={LogoCircle}
+            alt="logo-tatova-pila"
+            style={{ height: "60px" }}
+          />
+        </div>
       </div>
     </section>
   );
