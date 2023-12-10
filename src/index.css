@@ -32,6 +32,7 @@ body {
   letter-spacing: 1px;
   line-height: 1.5;
   overflow: scroll;
+  max-width: 800px;
 }
 
 .relative {
@@ -45,4 +46,23 @@ body {
 
 .first-letter {
   font-size: 1.7rem;
+}
+
+.dis-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-heading {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .page-heading {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
 }

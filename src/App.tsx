@@ -16,7 +16,7 @@ function App() {
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
   useEffect(() => {
-    const pageSections = document.querySelectorAll(".section");
+    const pageSections = document.querySelectorAll(".page-section-section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

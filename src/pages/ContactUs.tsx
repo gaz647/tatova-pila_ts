@@ -7,6 +7,7 @@ const ContactUs = () => {
   return (
     <section className="section-container relative  contact-us">
       <div className="text-container">
+        <div className="page-heading">Kontakt</div>
         <h3 className="contact-us-heading">
           Ozvěte se nám a my Vám rádi nařežeme!
         </h3>
