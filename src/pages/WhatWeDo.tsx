@@ -2,7 +2,7 @@ import "./WhatWeDo.css";
 
 const WhatWeDo = () => {
   return (
-    <section className="section-container what-we-do dis-flex-center">
+    <section className="what-we-do dis-flex-center">
       <div className="text-container">
         <div className="page-heading">Co děláme</div>
         <div className="text-container-text">

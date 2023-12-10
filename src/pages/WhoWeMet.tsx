@@ -2,7 +2,7 @@ import "./WhoWeMet.css";
 
 const WhoWeMet = () => {
   return (
-    <section className="section-container who-we-met">
+    <section className="who-we-met">
       <div className="text-container">
         <div className="page-heading">Koho jsme potkali</div>
         <div className="text-container-text">

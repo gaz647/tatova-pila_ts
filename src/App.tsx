@@ -16,7 +16,7 @@ function App() {
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
   useEffect(() => {
-    const pageSections = document.querySelectorAll(".page-section-section");
+    const pageSections = document.querySelectorAll(".section-container");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -40,7 +40,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="app">
       <Navbar currentVisiblePageId={currentVisiblePageId} />
       <PageSection id={"0"} image={"/aboutUs.jpg"}>
         <AboutUs />

@@ -1,9 +1,9 @@
-.container {
+.app {
   position: relative;
   overflow-y: auto;
   overscroll-behavior-y: contain;
   scroll-snap-type: y mandatory;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   scrollbar-width: none;
   scroll-behavior: smooth;

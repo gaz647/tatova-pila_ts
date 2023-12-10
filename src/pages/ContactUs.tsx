@@ -5,7 +5,7 @@ import HonzaImage from "../assets/pictures/profile-image.png";
 
 const ContactUs = () => {
   return (
-    <section className="section-container relative  contact-us">
+    <section className="contact-us">
       <div className="text-container">
         <div className="page-heading">Kontakt</div>
         <h3 className="contact-us-heading">

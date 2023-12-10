@@ -3,7 +3,7 @@ import LogoCircle from "../assets/pictures/logo-white-circle.png";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="section-container about-us">
+    <section className="about-us">
       <div className="text-container">
         <h1>Jsme pilaři a jsme z Litomyšle</h1>
         <br />

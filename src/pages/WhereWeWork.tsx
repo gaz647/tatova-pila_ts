@@ -2,7 +2,7 @@ import "./WhereWeWork.css";
 
 const WhereWeWork = () => {
   return (
-    <section className="section-container where-we-work">
+    <section className="where-we-work">
       <div className="text-container">
         <div className="page-heading">Kde pracujeme</div>
         <div className="text-container-text">
