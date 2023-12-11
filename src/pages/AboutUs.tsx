@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
           <li>Nemáte les? Nevadí! Dodáme vám z vlastního!</li>
         </ul>
         <br />
-        <h3>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám {`:)`}</h3>
+        <h3>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám 🙂</h3>
         <div className="greeting-container">
           <h3 className="greeting-vase">Vaše </h3>
           <img

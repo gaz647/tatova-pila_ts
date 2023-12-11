@@ -1,9 +1,3 @@
-.about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .text-container h1,
 h3 {
   display: block;
