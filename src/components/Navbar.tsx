@@ -1,14 +1,18 @@
 import "./Navbar.css";
 import data from "../assets/data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../assets/pictures/logo-white-horizontal.png";
 
 interface NavbarProps {
   currentVisiblePageId: string;
+  isScrolling: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
+const Navbar: React.FC<NavbarProps> = ({
+  currentVisiblePageId,
+  isScrolling,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleBlur = () => {
@@ -16,6 +20,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
       setIsVisible(false);
     }, 200);
   };
+
+  useEffect(() => {
+    if (isScrolling) {
+      handleBlur();
+    }
+  }, [isScrolling]);
 
   return (
     <nav className="navbar" onBlur={handleBlur} tabIndex={0}>

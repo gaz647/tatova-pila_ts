@@ -14,6 +14,14 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  const handleScrolling = () => {
+    setIsScrolling(true);
+    setTimeout(() => {
+      setIsScrolling(false);
+    }, 200);
+  };
 
   useEffect(() => {
     const pageSections = document.querySelectorAll(".section-container");
@@ -40,8 +48,11 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Navbar currentVisiblePageId={currentVisiblePageId} />
+    <div className="app" onScroll={handleScrolling}>
+      <Navbar
+        currentVisiblePageId={currentVisiblePageId}
+        isScrolling={isScrolling}
+      />
       <PageSection id={"0"} image={"/aboutUs.jpg"}>
         <AboutUs />
       </PageSection>
