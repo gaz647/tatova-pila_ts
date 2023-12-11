@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    const pageSections = document.querySelectorAll(".section-container");
+    const pageSections = document.querySelectorAll(".page-section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
