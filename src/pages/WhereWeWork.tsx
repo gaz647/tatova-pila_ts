@@ -2,7 +2,7 @@ import "./WhereWeWork.css";
 
 const WhereWeWork = () => {
   return (
-    <section className="where-we-work">
+    <div className="page-container where-we-work dis-flex-row-center">
       <div className="text-container">
         <div className="page-heading">Kde pracujeme</div>
         <div className="text-container-text">
@@ -19,7 +19,7 @@ const WhereWeWork = () => {
           Smysl pro nás má množství alespoň 5cbm kulatiny.
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

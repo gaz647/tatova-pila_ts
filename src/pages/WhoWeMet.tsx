@@ -2,7 +2,7 @@ import "./WhoWeMet.css";
 
 const WhoWeMet = () => {
   return (
-    <section className="who-we-met">
+    <div className="page-container who-we-met dis-flex-row-center">
       <div className="text-container">
         <div className="page-heading">Koho jsme potkali</div>
         <div className="text-container-text">
@@ -16,7 +16,7 @@ const WhoWeMet = () => {
           Proč se nepodělit, pokud jste se doklikali až sem?
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

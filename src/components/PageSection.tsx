@@ -14,6 +14,7 @@ const PageSection: React.FC<PageSectionProps> = ({ id, image, children }) => {
     backgroundPosition: "center center",
     backgroundSize: "cover",
   };
+
   return (
     <section className="page-section" id={id} style={sectionStyle}>
       {children}

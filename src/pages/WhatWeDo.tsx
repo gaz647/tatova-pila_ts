@@ -1,8 +1,9 @@
 import "./WhatWeDo.css";
+import Pricing from "../components/Pricing";
 
 const WhatWeDo = () => {
   return (
-    <section className="what-we-do dis-flex-center">
+    <div className="page-container what-we-do">
       <div className="text-container">
         <div className="page-heading">Co děláme</div>
         <div className="text-container-text">
@@ -31,7 +32,8 @@ const WhatWeDo = () => {
           pořezu a druhu řezané dřeviny.
         </div>
       </div>
-    </section>
+      <Pricing />
+    </div>
   );
 };
 

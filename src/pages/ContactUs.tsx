@@ -5,7 +5,7 @@ import HonzaImage from "../assets/pictures/profile-image.png";
 
 const ContactUs = () => {
   return (
-    <section className="contact-us">
+    <div className="page-container contact-us dis-flex-row-center relative">
       <div className="text-container">
         <div className="page-heading">Kontakt</div>
         <h3 className="contact-us-heading">
@@ -20,7 +20,7 @@ const ContactUs = () => {
         <h3>tatovapila@gmail.com</h3>
       </div>
       <Footer />
-    </section>
+    </div>
   );
 };
 

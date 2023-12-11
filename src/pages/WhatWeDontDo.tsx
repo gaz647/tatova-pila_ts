@@ -2,7 +2,7 @@ import "./WhatWeDontDo.css";
 
 const WhatWeDontDo = () => {
   return (
-    <section className="what-we-dont-do">
+    <div className="page-container what-we-dont-do dis-flex-row-center">
       <div className="text-container">
         <div className="page-heading">Co neděláme</div>
         <div className="text-container-text">
@@ -22,7 +22,7 @@ const WhatWeDontDo = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
