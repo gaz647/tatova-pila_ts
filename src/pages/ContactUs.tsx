@@ -8,16 +8,16 @@ const ContactUs = () => {
     <div className="page-container contact-us dis-flex-row-center relative">
       <div className="text-container">
         <div className="page-heading">Kontakt</div>
-        <h3 className="contact-us-heading">
+        <h2 className="contact-us-heading text-shadow-black">
           Ozvěte se nám a my Vám rádi nařežeme!
-        </h3>
+        </h2>
         <br />
         <div className="contact-us-contact-cards-container">
           <ContactCard image={HonzaImage} name={"Honza"} phone="721 223 677" />
           <ContactCard image={HonzaImage} name={"Michal"} phone="608 416 830" />
         </div>
 
-        <h3>tatovapila@gmail.com</h3>
+        <h2 className="text-shadow-black">tatovapila@gmail.com</h2>
       </div>
       <Footer />
     </div>

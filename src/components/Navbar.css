@@ -3,7 +3,7 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--navbar-footer-black);
   display: flex;
   padding: 0.5rem;
 }
@@ -28,7 +28,6 @@
   align-items: center;
   list-style-type: none;
   flex-wrap: wrap;
-  /* background-color: bisque; */
 }
 
 .navbar-ul-li {
@@ -38,19 +37,19 @@
 
 .navbar-ul-li-a {
   text-decoration: none;
-  color: lightgray;
+  color: var(--light-gray);
   text-transform: uppercase;
   cursor: pointer;
   padding-bottom: 0.2rem;
 }
 
 .navbar-ul-li-a:hover {
-  color: yellow;
+  color: var(--yellow);
 }
 
 .navbar-active {
-  color: white;
-  border-bottom: 1px solid yellow;
+  color: var(--white);
+  border-bottom: 1px solid var(--yellow);
 }
 
 .navbar-mobile-icon-container {
@@ -92,7 +91,7 @@
   .navbar-mobile-icon {
     display: block;
     font-size: 1.5rem;
-    color: lightgray;
+    color: var(--light-gray);
   }
 }
 

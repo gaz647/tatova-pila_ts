@@ -1,5 +1,5 @@
 import "./WhatWeDo.css";
-import Pricing from "../components/Pricing";
+import PricingTable from "../components/PricingTable";
 
 const WhatWeDo = () => {
   return (
@@ -32,7 +32,13 @@ const WhatWeDo = () => {
           pořezu a druhu řezané dřeviny.
         </div>
       </div>
-      <Pricing />
+      <div className="text-container">
+        <h2 className="text-shadow-black">
+          Ceník pořezu výřezů/kulatiny - 1CBM
+        </h2>
+        <br />
+        <PricingTable />
+      </div>
     </div>
   );
 };

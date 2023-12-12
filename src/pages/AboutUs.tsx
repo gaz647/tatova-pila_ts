@@ -5,9 +5,9 @@ const AboutUs: React.FC = () => {
   return (
     <div className="page-container about-us dis-flex-row-center">
       <div className="text-container">
-        <h1>Jsme pilaři a jsme z Litomyšle</h1>
+        <h1 className="text-shadow-black">Jsme pilaři a jsme z Litomyšle</h1>
         <br />
-        <ul>
+        <ul className="text-shadow-black">
           <li>
             Svou prací cílíme především na vlastníka lesa, jenž potřebuje
             pořezat svou kulatinu/výřezy na pilařské polotovary.{" "}
@@ -26,10 +26,12 @@ const AboutUs: React.FC = () => {
           <li>Nemáte les? Nevadí! Dodáme vám z vlastního!</li>
         </ul>
         <br />
-        <h3>Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám 🙂</h3>
+        <h2 className="text-shadow-black">
+          Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám 🙂
+        </h2>
         <br />
         <div className="greeting-container">
-          <h3 className="greeting-vase">Vaše </h3>
+          <h2 className="greeting-vase text-shadow-black">Vaše </h2>
           <img
             src={LogoCircle}
             alt="logo-tatova-pila"

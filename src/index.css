@@ -1,3 +1,39 @@
+:root {
+  /* COLORS */
+  --white: rgb(245, 245, 245);
+  --yellow: rgb(255, 255, 0);
+  --light-gray: rgb(211, 211, 211);
+  --light-black: rgb(37, 37, 37);
+  --navbar-footer-black: rgba(0, 0, 0, 0.8);
+
+  /* FONT SIZES */
+  --fs-h1: 1.5rem;
+  --fs-h2: 1.25rem;
+  --fs-text: 1rem;
+  --fs-table-text: 0.8rem;
+
+  /* TEXT SHADOWS */
+  --text-shadow-black: 2px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 500px) {
+  :root {
+    --fs-h1: 1.75rem;
+    --fs-h2: 1.3rem;
+    --fs-text: 1.2rem;
+    --fs-table-text: 1rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --fs-h1: 2.5rem;
+    --fs-h2: 1.65rem;
+    --fs-text: 1.4rem;
+    --fs-table-text: 1.25rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +42,22 @@
   -moz-box-sizing: border-box;
   font-family: "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
   letter-spacing: 0.01rem;
+}
+
+p {
+  font-size: var(--fs-text);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+.text-shadow-black {
+  text-shadow: var(--text-shadow-black);
 }
 
 .relative {
@@ -20,6 +72,10 @@
 
 .page-heading {
   display: none;
+  font-size: var(--fs-h1);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: var(--text-shadow-black);
 }
 
 .text-container {
@@ -28,30 +84,32 @@
   background-color: rgba(87, 102, 102, 0.64);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  color: whitesmoke;
+  color: var(--white);
   letter-spacing: 1px;
   line-height: 1.5;
   overflow: scroll;
-  max-width: 80%;
-  /* max-width: 800px; */
+  width: 80%;
+  max-width: 1200px;
   padding: 2rem;
   margin: 1rem;
 }
 
 .text-container-text {
-  color: whitesmoke;
+  color: var(--white);
   letter-spacing: 1px;
+  font-size: var(--fs-text);
+  text-shadow: var(--text-shadow-black);
 }
 
 .text-container h1,
-h3 {
+h2 {
   display: block;
   text-align: center;
   margin: 1rem;
 }
 
 .text-container h1 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h1);
 }
 
 .text-container ul {
@@ -60,6 +118,7 @@ h3 {
 
 .text-container ul li {
   margin-left: 1rem;
+  font-size: var(--fs-text);
 }
 
 .dis-flex-row-center {
@@ -71,8 +130,5 @@ h3 {
 @media screen and (max-width: 1050px) {
   .page-heading {
     display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
   }
 }
