@@ -11,3 +11,17 @@
   justify-content: space-around;
   align-items: center;
 }
+.footer a {
+  display: block;
+  max-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.made-in-litomysl,
+.gaz-647 {
+  height: 2rem;
+}

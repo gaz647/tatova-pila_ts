@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
   return (
     <nav className="navbar" onBlur={() => setIsVisible(false)} tabIndex={0}>
       <div className="navbar-logo-container">
-        <img src={Logo} alt="logo" className="navbar-logo" />
+        <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
 
         <div
           className="navbar-mobile-icon-container"
