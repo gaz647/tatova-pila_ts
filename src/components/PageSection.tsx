@@ -4,8 +4,7 @@ import { ReactNode } from "react";
 interface PageSectionProps {
   id: string;
   image: string;
-
-  children?: ReactNode;
+  children: ReactNode;
 }
 
 const PageSection: React.FC<PageSectionProps> = ({ id, image, children }) => {
