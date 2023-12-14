@@ -1,4 +1,5 @@
 import "./WhoWeMet.css";
+import Footer from "../components/Footer";
 
 const WhoWeMet = () => {
   return (
@@ -16,6 +17,7 @@ const WhoWeMet = () => {
           Proč se nepodělit, pokud jste se doklikali až sem?
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

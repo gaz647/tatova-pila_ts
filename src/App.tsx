@@ -54,11 +54,11 @@ function App() {
       <PageSection id={"3"} image={"/whatWeDontDo.jpg"}>
         <WhatWeDontDo />
       </PageSection>
-      <PageSection id={"4"} image={"/whoWeMet.jpg"}>
-        <WhoWeMet />
-      </PageSection>
-      <PageSection id={"5"} image={"/contactUs.jpg"}>
+      <PageSection id={"4"} image={"/contactUs.jpg"}>
         <ContactUs />
+      </PageSection>
+      <PageSection id={"5"} image={"/whoWeMet.jpg"}>
+        <WhoWeMet />
       </PageSection>
     </div>
   );

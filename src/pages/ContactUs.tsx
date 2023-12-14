@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import "./ContactUs.css";
 import ContactCard from "../components/ContactCard";
 import HonzaImage from "../assets/pictures/profile-image.png";
@@ -19,7 +18,6 @@ const ContactUs = () => {
 
         <h2 className="text-shadow-black">tatovapila@gmail.com</h2>
       </div>
-      <Footer />
     </div>
   );
 };
