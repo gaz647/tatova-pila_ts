@@ -4,19 +4,11 @@ import { ReactNode } from "react";
 interface PageSectionProps {
   id: string;
   image: string;
-  hideNavbarOnClick: React.MouseEventHandler<HTMLElement> | undefined;
-  hideNavbarOnTouchStart: React.TouchEventHandler<HTMLElement> | undefined;
 
   children?: ReactNode;
 }
 
-const PageSection: React.FC<PageSectionProps> = ({
-  id,
-  image,
-  hideNavbarOnClick,
-  hideNavbarOnTouchStart,
-  children,
-}) => {
+const PageSection: React.FC<PageSectionProps> = ({ id, image, children }) => {
   const sectionStyle = {
     backgroundImage: `url(${image})`,
     backgroundRepeat: "no-repeat",
@@ -25,13 +17,7 @@ const PageSection: React.FC<PageSectionProps> = ({
   };
 
   return (
-    <section
-      className="page-section"
-      id={id}
-      style={sectionStyle}
-      onClick={hideNavbarOnClick}
-      onTouchStart={hideNavbarOnTouchStart}
-    >
+    <section className="page-section" id={id} style={sectionStyle}>
       {children}
     </section>
   );
