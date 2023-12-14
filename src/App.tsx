@@ -11,6 +11,7 @@ import ContactUs from "./pages/ContactUs";
 import { useState, useEffect } from "react";
 
 function App() {
+  const screenWidth = window.innerWidth;
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
   useEffect(() => {
@@ -42,22 +43,22 @@ function App() {
   return (
     <div className="app">
       <Navbar currentVisiblePageId={currentVisiblePageId} />
-      <PageSection id={"0"} image={"/aboutUs.jpg"}>
+      <PageSection id={"0"} image={"/aboutUs"} screenWidth={screenWidth}>
         <AboutUs />
       </PageSection>
-      <PageSection id={"1"} image={"/whatWeDo.jpg"}>
+      <PageSection id={"1"} image={"/whatWeDo"} screenWidth={screenWidth}>
         <WhatWeDo />
       </PageSection>
-      <PageSection id={"2"} image={"/whereWeWork.jpg"}>
+      <PageSection id={"2"} image={"/whereWeWork"} screenWidth={screenWidth}>
         <WhereWeWork />
       </PageSection>
-      <PageSection id={"3"} image={"/whatWeDontDo.jpg"}>
+      <PageSection id={"3"} image={"/whatWeDontDo"} screenWidth={screenWidth}>
         <WhatWeDontDo />
       </PageSection>
-      <PageSection id={"4"} image={"/contactUs.jpg"}>
+      <PageSection id={"4"} image={"/contactUs"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
-      <PageSection id={"5"} image={"/whoWeMet.jpg"}>
+      <PageSection id={"5"} image={"/whoWeMet"} screenWidth={screenWidth}>
         <WhoWeMet />
       </PageSection>
     </div>
