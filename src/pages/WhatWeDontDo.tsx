@@ -16,8 +16,8 @@ const WhatWeDontDo = () => {
             </li>
             <br />
             <li>
-              Neradi pracujeme pod tlakem - jediný tlak co akceptujeme je ten
-              náš vlastní 🙂
+              Nechceme pracovat pod tlakem - jediný tlak který akceptujeme je
+              ten náš vlastní 🙂
             </li>
           </ul>
         </div>

@@ -15,6 +15,14 @@ import { useState, useEffect } from "react";
 function App() {
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
   const [isScrolling, setIsScrolling] = useState(false);
+  const [isToHideNavbar, setIsToHideNavbar] = useState(false);
+
+  const handleIsToHideNavbar = () => {
+    setIsToHideNavbar(true);
+    setTimeout(() => {
+      setIsToHideNavbar(false);
+    }, 200);
+  };
 
   const handleScrolling = () => {
     setIsScrolling(true);
@@ -32,7 +40,7 @@ function App() {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.2,
       }
     );
 
@@ -52,23 +60,54 @@ function App() {
       <Navbar
         currentVisiblePageId={currentVisiblePageId}
         isScrolling={isScrolling}
+        isToHideNavbar={isToHideNavbar}
       />
-      <PageSection id={"0"} image={"/aboutUs.jpg"}>
+      <PageSection
+        id={"0"}
+        image={"/aboutUs.jpg"}
+        hideNavbarOnClick={handleIsToHideNavbar}
+        hideNavbarOnTouchStart={handleIsToHideNavbar}
+      >
         <AboutUs />
       </PageSection>
-      <PageSection id={"1"} image={"/whatWeDo.jpg"}>
+      <PageSection
+        id={"1"}
+        image={"/whatWeDo.jpg"}
+        hideNavbarOnClick={handleIsToHideNavbar}
+        hideNavbarOnTouchStart={handleIsToHideNavbar}
+      >
         <WhatWeDo />
       </PageSection>
-      <PageSection id={"2"} image={"/whereWeWork.jpg"}>
+      <PageSection
+        id={"2"}
+        image={"/whereWeWork.jpg"}
+        hideNavbarOnClick={handleIsToHideNavbar}
+        hideNavbarOnTouchStart={handleIsToHideNavbar}
+      >
         <WhereWeWork />
       </PageSection>
-      <PageSection id={"3"} image={"/whatWeDontDo.jpg"}>
+      <PageSection
+        id={"3"}
+        image={"/whatWeDontDo.jpg"}
+        hideNavbarOnClick={handleIsToHideNavbar}
+        hideNavbarOnTouchStart={handleIsToHideNavbar}
+      >
         <WhatWeDontDo />
       </PageSection>
-      <PageSection id={"4"} image={"/whoWeMet.jpg"}>
+      <PageSection
+        id={"4"}
+        image={"/whoWeMet.jpg"}
+        hideNavbarOnClick={handleIsToHideNavbar}
+        hideNavbarOnTouchStart={handleIsToHideNavbar}
+      >
         <WhoWeMet />
       </PageSection>
-      <PageSection id={"5"} image={"/contactUs.jpg"}>
+      <PageSection
+        id={"5"}
+        image={"/contactUs.jpg"}
+        hideNavbarOnClick={handleIsToHideNavbar}
+        hideNavbarOnTouchStart={handleIsToHideNavbar}
+      >
         <ContactUs />
       </PageSection>
     </div>

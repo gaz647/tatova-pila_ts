@@ -7,11 +7,13 @@ import Logo from "../assets/pictures/logo-white-horizontal.png";
 interface NavbarProps {
   currentVisiblePageId: string;
   isScrolling: boolean;
+  isToHideNavbar: boolean;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
   currentVisiblePageId,
   isScrolling,
+  isToHideNavbar,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -23,12 +25,27 @@ const Navbar: React.FC<NavbarProps> = ({
 
   useEffect(() => {
     if (isScrolling) {
-      handleBlur();
+      console.log("isScrolling useEffect v Navbar");
+
+      // handleBlur();
     }
   }, [isScrolling]);
 
+  useEffect(() => {
+    if (isToHideNavbar) {
+      handleBlur();
+    }
+  }, [isToHideNavbar]);
+
   return (
-    <nav className="navbar" onBlur={handleBlur} tabIndex={0}>
+    <nav
+      className="navbar"
+      onBlur={() => {
+        handleBlur;
+        console.log("onBlur");
+      }}
+      tabIndex={0}
+    >
       <div className="navbar-logo-container">
         <img src={Logo} alt="logo" className="navbar-logo" />
         <div
