@@ -46,13 +46,13 @@ const PageSection: React.FC<PageSectionProps> = ({
     <section className="page-section" id={id}>
       <div
         className={`blur-container ${isImageLoaded && "blur-container-loaded"}`}
-        style={{ backgroundImage: `url(${image}-small.jpg)` }}
+        style={{ backgroundImage: `url(${image}-blurred.jpg)` }}
       >
         <img
           className={`background-image ${
             isImageLoaded && "background-image-loaded"
           }`}
-          src={`${image}.jpg`}
+          src={`${image}-big.jpg`}
           alt=""
           loading="lazy"
         />
