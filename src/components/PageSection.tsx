@@ -16,6 +16,13 @@ const PageSection: React.FC<PageSectionProps> = ({
 }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
+  const blurredImage = `url(${image}-blurred.jpg)`;
+
+  const mainImage =
+    screenWidth < 1000 ? `url(${image}-small.jpg)` : `${image}-big.jpg`;
+
+  const bigImage = `${image}-big.jpg`;
+
   console.log(screenWidth);
 
   useEffect(() => {
@@ -46,13 +53,13 @@ const PageSection: React.FC<PageSectionProps> = ({
     <section className="page-section" id={id}>
       <div
         className={`blur-container ${isImageLoaded && "blur-container-loaded"}`}
-        style={{ backgroundImage: `url(${image}-blurred.jpg)` }}
+        style={{ backgroundImage: blurredImage }}
       >
         <img
           className={`background-image ${
             isImageLoaded && "background-image-loaded"
           }`}
-          src={`${image}-big.jpg`}
+          src={bigImage}
           alt=""
           loading="lazy"
         />
