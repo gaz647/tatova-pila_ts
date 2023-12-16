@@ -92,6 +92,7 @@ h2 {
   max-width: 1200px;
   padding: 2rem;
   margin: 1rem;
+  z-index: 998;
 }
 
 .text-container-text {

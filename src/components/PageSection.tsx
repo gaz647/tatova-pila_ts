@@ -16,12 +16,13 @@ const PageSection: React.FC<PageSectionProps> = ({
 }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const blurredImage = `url(${image}-blurred.jpg)`;
+  const blurredImage =
+    screenWidth < 500
+      ? `url(${image}_mobile-blurred.jpg)`
+      : `url(${image}_big-blurred.jpg)`;
 
   const mainImage =
-    screenWidth < 1000 ? `url(${image}-small.jpg)` : `${image}-big.jpg`;
-
-  const bigImage = `${image}-big.jpg`;
+    screenWidth < 500 ? `${image}_mobile.jpg` : `${image}_big.jpg`;
 
   console.log(screenWidth);
 
@@ -59,7 +60,7 @@ const PageSection: React.FC<PageSectionProps> = ({
           className={`background-image ${
             isImageLoaded && "background-image-loaded"
           }`}
-          src={bigImage}
+          src={mainImage}
           alt=""
           loading="lazy"
         />

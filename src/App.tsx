@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const screenWidth = window.innerWidth;
+
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
   useEffect(() => {
@@ -42,7 +43,10 @@ function App() {
 
   return (
     <div className="app">
-      <Navbar currentVisiblePageId={currentVisiblePageId} />
+      <Navbar
+        currentVisiblePageId={currentVisiblePageId}
+        screenWidth={screenWidth}
+      />
       <PageSection id={"0"} image={"/about-us"} screenWidth={screenWidth}>
         <AboutUs />
       </PageSection>
