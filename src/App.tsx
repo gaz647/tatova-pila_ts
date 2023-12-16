@@ -43,22 +43,26 @@ function App() {
   return (
     <div className="app">
       <Navbar currentVisiblePageId={currentVisiblePageId} />
-      <PageSection id={"0"} image={"/aboutUs"} screenWidth={screenWidth}>
+      <PageSection id={"0"} image={"/about-us"} screenWidth={screenWidth}>
         <AboutUs />
       </PageSection>
-      <PageSection id={"1"} image={"/whatWeDo"} screenWidth={screenWidth}>
+      <PageSection id={"1"} image={"/what-we-do"} screenWidth={screenWidth}>
         <WhatWeDo />
       </PageSection>
-      <PageSection id={"2"} image={"/whereWeWork"} screenWidth={screenWidth}>
+      <PageSection id={"2"} image={"/where-we-work"} screenWidth={screenWidth}>
         <WhereWeWork />
       </PageSection>
-      <PageSection id={"3"} image={"/whatWeDontDo"} screenWidth={screenWidth}>
+      <PageSection
+        id={"3"}
+        image={"/what-we-dont-do"}
+        screenWidth={screenWidth}
+      >
         <WhatWeDontDo />
       </PageSection>
-      <PageSection id={"4"} image={"/contactUs"} screenWidth={screenWidth}>
+      <PageSection id={"4"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
-      <PageSection id={"5"} image={"/whoWeMet"} screenWidth={screenWidth}>
+      <PageSection id={"5"} image={"/who-we-met"} screenWidth={screenWidth}>
         <WhoWeMet />
       </PageSection>
     </div>
