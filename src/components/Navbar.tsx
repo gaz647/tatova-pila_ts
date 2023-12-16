@@ -6,13 +6,9 @@ import Logo from "../assets/pictures/logo-white-horizontal_2.png";
 
 interface NavbarProps {
   currentVisiblePageId: string;
-  screenWidth: number;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-  currentVisiblePageId,
-  screenWidth,
-}) => {
+const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const data = [
@@ -52,9 +48,6 @@ const Navbar: React.FC<NavbarProps> = ({
     <nav className="navbar" onBlur={() => setIsVisible(false)} tabIndex={0}>
       <div className="navbar-logo-container">
         <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
-        <div style={{ backgroundColor: "white", height: "2rem" }}>
-          {screenWidth}
-        </div>
 
         <div
           className="navbar-mobile-icon-container"
