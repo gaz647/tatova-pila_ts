@@ -1,8 +1,25 @@
 import "./ContactUs.css";
+import { useEffect } from "react";
 import ContactCard from "../components/ContactCard";
 import HonzaImage from "../assets/pictures/profile-image.png";
+import FacebookPage from "../components/FacebookPage";
+import { FacebookProvider, Page } from "react-facebook";
 
 const ContactUs = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src =
+      "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="page-container contact-us dis-flex-row-center relative">
       <div className="text-container">
@@ -17,6 +34,15 @@ const ContactUs = () => {
         </div>
 
         <h2 className="text-shadow-black">tatovapila@gmail.com</h2>
+      </div>
+      <div className="facebook-page-container">
+        <FacebookPage />
+        <FacebookProvider appId="362134086405287">
+          <Page
+            href="https://www.facebook.com/profile.php?id=61554686402211"
+            tabs="timeline"
+          />
+        </FacebookProvider>
       </div>
     </div>
   );
