@@ -43,10 +43,7 @@ function App() {
 
   return (
     <div className="app">
-      <Navbar
-        currentVisiblePageId={currentVisiblePageId}
-        screenWidth={screenWidth}
-      />
+      <Navbar currentVisiblePageId={currentVisiblePageId} />
       <PageSection id={"0"} image={"/about-us"} screenWidth={screenWidth}>
         <AboutUs />
       </PageSection>
