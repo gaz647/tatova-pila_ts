@@ -1,7 +1,7 @@
 :root {
   /* COLORS */
   --white: rgb(245, 245, 245);
-  --white-transparent: rgba(245, 245, 245, 0.432);
+  --white-transparent: rgba(201, 200, 200, 0.459);
   --yellow: rgb(255, 255, 0);
   --light-gray: rgb(211, 211, 211);
   --light-black: rgb(37, 37, 37);
@@ -17,7 +17,7 @@
   --text-shadow-black: 2px 1px 4px rgba(0, 0, 0, 0.6);
 
   /* CONTACT CARD SIZES */
-  --contact-card-image-size: 5rem;
+  --contact-card-image-size: 8rem;
   --contact-card-container-margin: 1.5rem;
 }
 
@@ -27,7 +27,7 @@
     --fs-h2: 1.3rem;
     --fs-text: 1.2rem;
     --fs-table-text: 1rem;
-    --contact-card-image-size: 7rem;
+    --contact-card-image-size: 8rem;
   }
 }
 
@@ -37,7 +37,7 @@
     --fs-h2: 1.7rem;
     --fs-text: 1.3rem;
     --fs-table-text: 1.2rem;
-    --contact-card-image-size: 9rem;
+    --contact-card-image-size: 8rem;
   }
 }
 

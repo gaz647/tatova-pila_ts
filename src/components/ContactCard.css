@@ -22,11 +22,8 @@
   margin: 0.5rem;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-.contact-card-name {
-  font-weight: bold;
-  font-size: 1.2rem;
+  /* padding: 0.1rem; */
+  border-bottom: solid 1px var(--white);
 }
 
 .contact-card-button {

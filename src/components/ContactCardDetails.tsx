@@ -11,9 +11,16 @@ const ContactCardDetails: React.FC<ContactCardDetailsProps> = ({
 }) => {
   return (
     <>
-      {phone && <div className="text-shadow-black">{phone}</div>}
+      {phone && (
+        <div className="text-shadow-black contact-card-details-phone-email">
+          {phone}
+        </div>
+      )}
       {email && (
-        <a className="text-shadow-black" href={`mailto:${email}`}>
+        <a
+          className="text-shadow-black contact-card-details-phone-email"
+          href={`mailto:${email}`}
+        >
           {email}
         </a>
       )}
