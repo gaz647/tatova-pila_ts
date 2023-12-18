@@ -1,27 +1,40 @@
 .contact-card-container {
-  background-color: var(--white);
+  background-color: var(--white-transparent);
   color: black;
   border-radius: 12px;
-  max-width: 40%;
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-align: center;
-  margin: 0.5rem;
+  margin: var(--contact-card-container-margin);
+  color: var(--white);
 }
 
 .contact-card-image-container {
   border-radius: 50px;
-  height: 3rem;
-  width: 3rem;
 }
 
 .contact-card-image {
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
+  height: var(--contact-card-image-size);
+  width: var(--contact-card-image-size);
 }
 
-.contact-us-contact-cards-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.contact-card-name-email {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-card-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-card-button {
+  background-color: rgba(48, 48, 48, 0.815);
+  color: var(--white);
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }

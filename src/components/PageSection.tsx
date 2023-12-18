@@ -24,8 +24,6 @@ const PageSection: React.FC<PageSectionProps> = ({
   const mainImage =
     screenWidth < 500 ? `${image}_mobile.jpg` : `${image}_big.jpg`;
 
-  console.log(screenWidth);
-
   useEffect(() => {
     const imgElement: HTMLImageElement | null = document.querySelector(
       ".page-section .background-image"

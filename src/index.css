@@ -1,6 +1,7 @@
 :root {
   /* COLORS */
   --white: rgb(245, 245, 245);
+  --white-transparent: rgba(245, 245, 245, 0.432);
   --yellow: rgb(255, 255, 0);
   --light-gray: rgb(211, 211, 211);
   --light-black: rgb(37, 37, 37);
@@ -14,6 +15,10 @@
 
   /* TEXT SHADOWS */
   --text-shadow-black: 2px 1px 4px rgba(0, 0, 0, 0.6);
+
+  /* CONTACT CARD SIZES */
+  --contact-card-image-size: 5rem;
+  --contact-card-container-margin: 1.5rem;
 }
 
 @media (min-width: 500px) {
@@ -22,6 +27,17 @@
     --fs-h2: 1.3rem;
     --fs-text: 1.2rem;
     --fs-table-text: 1rem;
+    --contact-card-image-size: 7rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --fs-h1: 2rem;
+    --fs-h2: 1.7rem;
+    --fs-text: 1.3rem;
+    --fs-table-text: 1.2rem;
+    --contact-card-image-size: 9rem;
   }
 }
 
@@ -31,6 +47,7 @@
     --fs-h2: 1.65rem;
     --fs-text: 1.4rem;
     --fs-table-text: 1.25rem;
+    --contact-card-image-size: 10rem;
   }
 }
 
@@ -54,6 +71,11 @@ h1 {
 
 h2 {
   font-size: var(--fs-h2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .text-shadow-black {
