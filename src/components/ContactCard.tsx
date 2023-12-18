@@ -37,7 +37,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
           Ukázat
         </button>
       ) : (
-        <React.Suspense fallback={<div>Načítám</div>}>
+        <React.Suspense fallback={<div>..načítám</div>}>
           <ContactCardDetails phone={phone} email={email} />
         </React.Suspense>
       )}
