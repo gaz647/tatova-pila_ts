@@ -34,12 +34,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
     },
     {
       id: "4",
-      title: "Kontakt",
+      title: "Galerie",
       text: "Lorem ipsum dolores clan",
     },
     {
       id: "5",
-      title: "Koho jsme potkali",
+      title: "Kontakt",
       text: "Lorem ipsum dolores clan",
     },
   ];

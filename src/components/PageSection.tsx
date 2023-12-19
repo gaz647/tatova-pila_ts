@@ -3,8 +3,8 @@ import { ReactNode, useState, useEffect } from "react";
 
 interface PageSectionProps {
   id: string;
-  image: string;
-  screenWidth: number;
+  image?: string;
+  screenWidth?: number;
   children: ReactNode;
 }
 
@@ -17,12 +17,14 @@ const PageSection: React.FC<PageSectionProps> = ({
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const blurredImage =
-    screenWidth < 500
+    screenWidth && screenWidth < 500
       ? `url(${image}_mobile-blurred.jpg)`
       : `url(${image}_big-blurred.jpg)`;
 
   const mainImage =
-    screenWidth < 500 ? `${image}_mobile.jpg` : `${image}_big.jpg`;
+    screenWidth && screenWidth < 500
+      ? `${image}_mobile.jpg`
+      : `${image}_big.jpg`;
 
   useEffect(() => {
     const imgElement: HTMLImageElement | null = document.querySelector(
@@ -50,19 +52,23 @@ const PageSection: React.FC<PageSectionProps> = ({
 
   return (
     <section className="page-section" id={id}>
-      <div
-        className={`blur-container ${isImageLoaded && "blur-container-loaded"}`}
-        style={{ backgroundImage: blurredImage }}
-      >
-        <img
-          className={`background-image ${
-            isImageLoaded && "background-image-loaded"
+      {image && (
+        <div
+          className={`blur-container ${
+            isImageLoaded && "blur-container-loaded"
           }`}
-          src={mainImage}
-          alt=""
-          loading="lazy"
-        />
-      </div>
+          style={{ backgroundImage: blurredImage }}
+        >
+          <img
+            className={`background-image ${
+              isImageLoaded && "background-image-loaded"
+            }`}
+            src={mainImage}
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      )}
       {children}
     </section>
   );

@@ -5,7 +5,7 @@ import AboutUs from "./pages/AboutUs";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeWork from "./pages/WhereWeWork";
 import WhatWeDontDo from "./pages/WhatWeDontDo";
-import WhoWeMet from "./pages/WhoWeMet";
+import Gallery from "./pages/Gallery";
 import ContactUs from "./pages/ContactUs";
 // import data from "./assets/data";
 import { useState, useEffect } from "react";
@@ -60,11 +60,11 @@ function App() {
       >
         <WhatWeDontDo />
       </PageSection>
-      <PageSection id={"4"} image={"/contact-us"} screenWidth={screenWidth}>
-        <ContactUs />
+      <PageSection id={"4"}>
+        <Gallery />
       </PageSection>
-      <PageSection id={"5"} image={"/who-we-met"} screenWidth={screenWidth}>
-        <WhoWeMet />
+      <PageSection id={"5"} image={"/contact-us"} screenWidth={screenWidth}>
+        <ContactUs />
       </PageSection>
     </div>
   );
