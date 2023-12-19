@@ -109,7 +109,6 @@ a {
   color: var(--white);
   letter-spacing: 1px;
   line-height: 1.5;
-  overflow: scroll;
   width: 80%;
   max-width: 1200px;
   padding: 1rem;
