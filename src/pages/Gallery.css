@@ -1,0 +1,20 @@
+.gallery {
+  height: 100dvh;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: yellow;
+}
+
+.square {
+  /* background-color: red; */
+  height: 10vw;
+  width: 10vw;
+}
+
+.square:nth-child(odd) {
+  background-color: greenyellow;
+}

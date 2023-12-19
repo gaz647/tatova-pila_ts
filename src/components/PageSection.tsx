@@ -33,7 +33,6 @@ const PageSection: React.FC<PageSectionProps> = ({
 
     const handleImageLoad = () => {
       setIsImageLoaded(true);
-      console.log("loaded");
     };
 
     if (imgElement) {
