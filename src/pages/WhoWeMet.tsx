@@ -1,7 +1,7 @@
 import "./WhoWeMet.css";
 import Footer from "../components/Footer";
 
-const WhoWeMet = () => {
+const WhoWeMet: React.FC = () => {
   return (
     <div className="page-container who-we-met dis-flex-row-center">
       <div className="text-container">

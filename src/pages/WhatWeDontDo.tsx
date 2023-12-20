@@ -1,6 +1,6 @@
 import "./WhatWeDontDo.css";
 
-const WhatWeDontDo = () => {
+const WhatWeDontDo: React.FC = () => {
   return (
     <div className="page-container what-we-dont-do dis-flex-row-center">
       <div className="text-container">

@@ -1,6 +1,6 @@
 import "./WhereWeWork.css";
 
-const WhereWeWork = () => {
+const WhereWeWork: React.FC = () => {
   return (
     <div className="page-container where-we-work dis-flex-row-center">
       <div className="text-container">

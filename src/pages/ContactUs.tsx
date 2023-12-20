@@ -4,7 +4,7 @@ import HonzaImage from "../assets/pictures/profile-image-1.jpg";
 import MichalImage from "../assets/pictures/profile-image-2.jpg";
 import EmailImage from "../assets/pictures/email-image.jpg";
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
   return (
     <div className="page-container contact-us dis-flex-row-center relative">
       <div id="fb-root"></div>
