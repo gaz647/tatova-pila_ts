@@ -1,6 +1,6 @@
 import "./FacebookPage.css";
 
-const FacebookPage = () => {
+const FacebookPage: React.FC = () => {
   return <></>;
 };
 

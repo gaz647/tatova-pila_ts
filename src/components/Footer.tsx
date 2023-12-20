@@ -1,7 +1,7 @@
 import "./Footer.css";
 import LogoMadeInLitomysl from "../assets/pictures/made-in-litomysl-white.png";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <section className="footer">
       <a href="https://madeinlitomysl.cz/">
