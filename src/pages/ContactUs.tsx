@@ -3,6 +3,7 @@ import ContactCard from "../components/ContactCard";
 import HonzaImage from "../assets/pictures/profile-image-1.jpg";
 import MichalImage from "../assets/pictures/profile-image-2.jpg";
 import EmailImage from "../assets/pictures/email-image.jpg";
+import Footer from "../components/Footer";
 
 const ContactUs: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const ContactUs: React.FC = () => {
           <ContactCard image={EmailImage} email="tatovapila@gmail.com" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
