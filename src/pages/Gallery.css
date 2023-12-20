@@ -6,15 +6,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  background-color: yellow;
+  background-color: rgb(152, 152, 152);
 }
 
-.square {
-  /* background-color: red; */
-  height: 10vw;
-  width: 10vw;
-}
-
-.square:nth-child(odd) {
-  background-color: greenyellow;
+.gallery-img {
+  height: 20vw;
+  width: 20vw;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }

@@ -13,6 +13,8 @@ import { useState, useEffect } from "react";
 function App() {
   const screenWidth = window.innerWidth;
 
+  const screenHeight = window.innerHeight;
+
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
   useEffect(() => {
@@ -61,7 +63,7 @@ function App() {
         <WhatWeDontDo />
       </PageSection>
       <PageSection id={"4"}>
-        <Gallery />
+        <Gallery screenWidth={screenWidth} screenHeight={screenHeight} />
       </PageSection>
       <PageSection id={"5"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
