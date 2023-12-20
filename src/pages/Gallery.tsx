@@ -60,7 +60,7 @@ const Gallery: React.FC<GalleryProps> = ({ screenWidth, screenHeight }) => {
 
   const numberOfRows = Math.round(screenHeight / imageSize);
 
-  const totalImageCount = imageRowCount * numberOfRows;
+  const totalImageCount = imageRowCount * numberOfRows + 5;
 
   const imagesToBePlaced: string[] = [];
 
