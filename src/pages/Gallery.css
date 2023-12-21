@@ -1,1 +1,22 @@
+.gallery {
+  min-height: 100dvh;
+  width: 100%;
+}
 
+.gallery-black-bacground-container {
+  height: 100dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.gallery-carousel-container {
+  border: solid 8px var(--white);
+
+  max-width: 90%;
+  /* max-width: 900px; */
+  background-color: black;
+}
