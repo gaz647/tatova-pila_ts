@@ -5,14 +5,14 @@ import AboutUs from "./pages/AboutUs";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeWork from "./pages/WhereWeWork";
 import WhatWeDontDo from "./pages/WhatWeDontDo";
-import Gallery from "./pages/Gallery";
+// import Gallery from "./pages/Gallery";
 import ContactUs from "./pages/ContactUs";
 // import data from "./assets/data";
 import { useState, useEffect } from "react";
 
 function App() {
   const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
+  // const screenHeight = window.innerHeight;
 
   const [currentVisiblePageId, setCurrentVisiblePageId] = useState("0");
 
@@ -61,9 +61,9 @@ function App() {
       >
         <WhatWeDontDo />
       </PageSection>
-      <PageSection id={"4"}>
+      {/* <PageSection id={"4"}>
         <Gallery screenWidth={screenWidth} screenHeight={screenHeight} />
-      </PageSection>
+      </PageSection> */}
       <PageSection id={"5"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
