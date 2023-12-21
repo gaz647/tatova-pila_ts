@@ -64,7 +64,7 @@ function App() {
       {/* <PageSection id={"4"}>
         <Gallery screenWidth={screenWidth} screenHeight={screenHeight} />
       </PageSection> */}
-      <PageSection id={"5"} image={"/contact-us"} screenWidth={screenWidth}>
+      <PageSection id={"4"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
     </div>
