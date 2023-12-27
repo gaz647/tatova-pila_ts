@@ -151,6 +151,13 @@ h2 {
   align-items: center;
 }
 
+.dis-flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1050px) {
   .page-heading {
     display: block;

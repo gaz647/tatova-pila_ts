@@ -1,8 +1,9 @@
 import "./WhereWeWork.css";
+import LocationsMap from "../components/LocationsMap";
 
 const WhereWeWork: React.FC = () => {
   return (
-    <div className="page-container where-we-work dis-flex-row-center">
+    <div className="page-container where-we-work dis-flex-column-center">
       <div className="text-container">
         <div className="page-heading">Kde pracujeme</div>
         <div className="text-container-text">
@@ -19,6 +20,7 @@ const WhereWeWork: React.FC = () => {
           Smysl pro nás má množství alespoň 5cbm kulatiny.
         </div>
       </div>
+      <LocationsMap />
     </div>
   );
 };
