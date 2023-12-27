@@ -51,6 +51,7 @@ const LocationsMap = () => {
   return (
     <APIProvider apiKey={apiKey}>
       <div className="locations-map-container">
+        <div className="transparent-cover">c</div>
         <Map
           center={position.center}
           zoom={9}
