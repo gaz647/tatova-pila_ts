@@ -51,8 +51,6 @@ const Gallery: React.FC = () => {
     { original: "/gallery-bg-image-45_2.jpg" },
   ];
 
-  console.log(images.length);
-
   const startIndex = Math.floor(Math.random() * 45);
 
   return (
