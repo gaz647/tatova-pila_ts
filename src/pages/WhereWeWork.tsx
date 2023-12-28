@@ -10,14 +10,14 @@ const WhereWeWork: React.FC = () => {
           Pilku máme mobilní, tzn. že přijedeme k Vám.
           <br />
           <br />
-          Podmínkou je elektrická zásuvka na 380V.
+          Podmínkou je pouze elektrická zásuvka na 380V a množství kulatiny 5cmb
+          a více.
           <br />
           <br />
-          Žijeme v Litomyšli, takže náš rajón je Svitavsko, plus rádi vyrážíme
-          na Vysočinu okolo Borové, Březin, Jimramova.
+          Žijeme v Litomyšli, takže náš rajón je Svitavsko.
           <br />
           <br />
-          Smysl pro nás má množství alespoň 5cbm kulatiny.
+          Naše oblíbené lokality můžete vidět níže na mapě.
         </div>
       </div>
       <LocationsMap />
