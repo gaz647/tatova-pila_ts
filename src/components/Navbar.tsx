@@ -44,8 +44,14 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
     },
   ];
 
+  const handleBlur = () => {
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 200);
+  };
+
   return (
-    <nav className="navbar" onBlur={() => setIsVisible(false)} tabIndex={0}>
+    <nav className="navbar" onBlur={handleBlur} tabIndex={0}>
       <div className="navbar-logo-container">
         <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
 
