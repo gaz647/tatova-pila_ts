@@ -8,26 +8,25 @@ const AboutUs: React.FC = () => {
         <div className="page-heading">Jsme pilaři a jsme z Litomyšle</div>
 
         <div className="text-container-text">
-          Svou prací cílíme především na vlastníka lesa, jenž potřebuje pořezat
-          svou kulatinu/výřezy na pilařské polotovary.
-          <br />
-          <br />
-          <br />
-          Disponujeme pojízdnou pásovou pilou, se kterou přijedeme přímo k vám a
-          provedeme pořez dle vašeho přání.
-          <br />
-          <br />
-          <br />
-          Jedinou naší podmínkou je minimální množství kulatiny 5cbm v délce
-          1.5-6m, do průměru 65cm a elektrická zásuvka na 380V.
-          <br />
-          <br />
-          <br />
-          Nemáte les? Nevadí! Dodáme vám z vlastního!
+          <div className="text-container-text-sentence">
+            Svou prací cílíme především na vlastníka lesa, jenž potřebuje
+            pořezat svou kulatinu/výřezy na pilařské polotovary.
+          </div>
+          <div className="text-container-text-sentence">
+            Disponujeme pojízdnou pásovou pilou, se kterou přijedeme přímo k vám
+            a provedeme pořez dle vašeho přání.
+          </div>
+          <div className="text-container-text-sentence">
+            Jedinou naší podmínkou je minimální množství kulatiny 5cbm v délce
+            1.5-6m, do průměru 65cm a elektrická zásuvka na 380V.
+          </div>
+          <div className="text-container-text-sentence">
+            Nemáte les? Nevadí! Dodáme vám z vlastního!
+          </div>
         </div>
         <br />
 
-        <div className="page-sub-heading">
+        <div className="page-sub-heading" style={{ margin: 0 }}>
           Zkuste to s námi a náš „zubatý cirkus“ nařeže i Vám 🙂
         </div>
         <br />

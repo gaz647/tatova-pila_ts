@@ -7,22 +7,19 @@ const WhatWeDontDo: React.FC = () => {
         <div className="page-heading">Co neděláme ?</div>
 
         <div className="text-container-text">
-          <ul>
-            <li>Neradi slibujeme něco, co není v našich silách.</li>
-            <br />
-            <br />
-            <li>
-              Svou práci vykonáváme po víkendech, takže někdy jsme zamluveni
-              dost dlouho dopředu a ač bychom rádi vyhověli všem, někdy to
-              nejde.
-            </li>
-            <br />
-            <br />
-            <li>
-              Nechceme pracovat pod tlakem - jediný tlak který akceptujeme je
-              ten náš vlastní 🙂
-            </li>
-          </ul>
+          <div className="text-container-text-sentence">
+            Neradi slibujeme něco, co není v našich silách.
+          </div>
+
+          <div className="text-container-text-sentence">
+            Svou práci vykonáváme po víkendech, takže někdy jsme zamluveni dost
+            dlouho dopředu a ač bychom rádi vyhověli všem, někdy to nejde.
+          </div>
+
+          <div className="text-container-text-sentence">
+            Nechceme pracovat pod tlakem - jediný tlak který akceptujeme je ten
+            náš vlastní 🙂
+          </div>
         </div>
       </div>
     </div>

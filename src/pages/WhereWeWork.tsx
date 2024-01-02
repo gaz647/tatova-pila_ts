@@ -8,20 +8,19 @@ const WhereWeWork: React.FC = () => {
         <div className="page-heading">Kde pracujeme ?</div>
 
         <div className="text-container-text">
-          Pilku máme mobilní, tzn. že přijedeme k Vám.
-          <br />
-          <br />
-          <br />
-          Podmínkou je pouze elektrická zásuvka na 380V a množství kulatiny 5cmb
-          a více.
-          <br />
-          <br />
-          <br />
-          Žijeme v Litomyšli, takže náš rajón je Svitavsko.
-          <br />
-          <br />
-          <br />
-          Naše oblíbené lokality můžete vidět níže na mapě.
+          <div className="text-container-text-sentence">
+            Pilku máme mobilní, tzn. že přijedeme k Vám.
+          </div>
+          <div className="text-container-text-sentence">
+            Podmínkou je pouze elektrická zásuvka na 380V a množství kulatiny
+            5cmb a více.
+          </div>
+          <div className="text-container-text-sentence">
+            Žijeme v Litomyšli, takže náš rajón je Svitavsko.
+          </div>
+          <div className="text-container-text-sentence">
+            Naše oblíbené lokality můžete vidět níže na mapě.
+          </div>
         </div>
       </div>
       <LocationsMap />
