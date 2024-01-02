@@ -6,6 +6,7 @@
   text-align: center;
   margin: var(--contact-card-container-margin);
   color: var(--white);
+  min-width: 24ch;
 }
 
 .contact-card-image-container {
