@@ -4,7 +4,7 @@ import PageSection from "./components/PageSection";
 import AboutUs from "./pages/AboutUs";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeWork from "./pages/WhereWeWork";
-import WhatWeDontDo from "./pages/WhatWeDontDo";
+// import WhatWeDontDo from "./pages/WhatWeDontDo";
 import Gallery from "./pages/Gallery";
 import ContactUs from "./pages/ContactUs";
 // import data from "./assets/data";
@@ -54,17 +54,17 @@ function App() {
       <PageSection id={"2"} image={"/where-we-work"} screenWidth={screenWidth}>
         <WhereWeWork />
       </PageSection>
-      <PageSection
+      {/* <PageSection
         id={"3"}
         image={"/what-we-dont-do"}
         screenWidth={screenWidth}
       >
         <WhatWeDontDo />
-      </PageSection>
-      <PageSection id={"4"} image={"/gallery"} screenWidth={screenWidth}>
+      </PageSection> */}
+      <PageSection id={"3"} image={"/gallery"} screenWidth={screenWidth}>
         <Gallery />
       </PageSection>
-      <PageSection id={"5"} image={"/contact-us"} screenWidth={screenWidth}>
+      <PageSection id={"4"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
     </div>
