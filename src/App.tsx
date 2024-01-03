@@ -1,11 +1,13 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import PageSection from "./components/PageSection";
-import AboutUs from "./pages/AboutUs";
+// import AboutUs from "./pages/AboutUs";
+import AboutUs_2 from "./pages/AboutUs_2";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeWork from "./pages/WhereWeWork";
 // import WhatWeDontDo from "./pages/WhatWeDontDo";
-import Gallery from "./pages/Gallery";
+// import Gallery from "./pages/Gallery";
+import Gallery_2 from "./pages/Gallery_2";
 import ContactUs from "./pages/ContactUs";
 // import data from "./assets/data";
 import { useState, useEffect } from "react";
@@ -45,8 +47,8 @@ function App() {
   return (
     <div className="app">
       <Navbar currentVisiblePageId={currentVisiblePageId} />
-      <PageSection id={"0"} image={"/about-us"} screenWidth={screenWidth}>
-        <AboutUs />
+      <PageSection id={"0"} image={"/gallery"} screenWidth={screenWidth}>
+        <AboutUs_2 />
       </PageSection>
       <PageSection id={"1"} image={"/what-we-do"} screenWidth={screenWidth}>
         <WhatWeDo />
@@ -61,8 +63,8 @@ function App() {
       >
         <WhatWeDontDo />
       </PageSection> */}
-      <PageSection id={"3"} image={"/gallery"} screenWidth={screenWidth}>
-        <Gallery />
+      <PageSection id={"3"} image={"/about-us"} screenWidth={screenWidth}>
+        <Gallery_2 />
       </PageSection>
       <PageSection id={"4"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
