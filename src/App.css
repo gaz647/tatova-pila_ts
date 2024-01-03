@@ -1,14 +1,1 @@
-.app {
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
-  height: 100dvh;
-  width: 100%;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
 
-::-webkit-scrollbar {
-  display: none;
-}

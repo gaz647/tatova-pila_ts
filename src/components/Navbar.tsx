@@ -3,45 +3,12 @@ import "./Navbar.css";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../assets/pictures/logo-white-horizontal.png";
+import { NavLink } from "react-router-dom";
 
-interface NavbarProps {
-  currentVisiblePageId: string;
-}
+interface NavbarProps {}
 
-const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
+const Navbar: React.FC<NavbarProps> = () => {
   const [isVisible, setIsVisible] = useState(false);
-
-  const data = [
-    {
-      id: "0",
-      title: "O nás",
-    },
-    {
-      id: "1",
-      title: "Co děláme",
-    },
-    {
-      id: "2",
-      title: "Kde pracujeme",
-    },
-    // {
-    //   id: "3",
-    //   title: "Co neděláme",
-    //   text: "Honza 721223677, Michal 608416830",
-    // },
-    {
-      id: "3",
-      title: "Za kolik",
-    },
-    {
-      id: "4",
-      title: "Galerie",
-    },
-    {
-      id: "5",
-      title: "Kontakt",
-    },
-  ];
 
   const handleBlur = () => {
     setTimeout(() => {
@@ -64,23 +31,84 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
         </div>
       </div>
 
-      <ul className={`navbar-ul ${isVisible && "navbar-ul-visible"}`}>
-        {data.map((onePage) => {
-          return (
-            <li className="navbar-ul-li" key={onePage.id}>
-              <a
-                className={`navbar-ul-li-a ${
-                  currentVisiblePageId.toString() === onePage.id &&
-                  "navbar-active"
-                }`}
-                href={`#${onePage.id}`}
-              >
-                {onePage.title}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+      <div
+        className={`navbar-navlinks-container ${
+          isVisible && "navbar-navlinks-container-visible"
+        }`}
+      >
+        <NavLink
+          to="/o-nas"
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          O nás
+        </NavLink>
+        <NavLink
+          to="/co-delame"
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          Co děláme
+        </NavLink>
+        <NavLink
+          to="/kde-pracujeme"
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          Kde pracujeme
+        </NavLink>
+        <NavLink
+          to="/za-kolik"
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          Za kolik
+        </NavLink>
+        <NavLink
+          to="/galerie"
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          Galerie
+        </NavLink>
+        <NavLink
+          to="/kontakt"
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          Kontakt
+        </NavLink>
+      </div>
     </nav>
   );
 };

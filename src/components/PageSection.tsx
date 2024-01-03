@@ -2,14 +2,12 @@ import "./PageSection.css";
 import { ReactNode, useState, useEffect } from "react";
 
 interface PageSectionProps {
-  id: string;
   image?: string;
   screenWidth?: number;
   children: ReactNode;
 }
 
 const PageSection: React.FC<PageSectionProps> = ({
-  id,
   image,
   screenWidth,
   children,
@@ -50,7 +48,7 @@ const PageSection: React.FC<PageSectionProps> = ({
   }, []);
 
   return (
-    <section className="page-section" id={id}>
+    <section className="page-section">
       {image && (
         <div
           className={`blur-container ${
