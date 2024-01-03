@@ -1,22 +1,12 @@
-.gallery {
-  min-height: 100dvh;
-  width: 100%;
-}
-
-.gallery-black-bacground-container {
-  height: 100dvh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.541);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3rem;
-}
-
 .gallery-carousel-container {
   border: solid 8px var(--white);
-
-  max-width: 90%;
-  /* max-width: 900px; */
+  /* max-height: 10%; */
+  max-width: 85%;
   background-color: black;
+}
+
+@media (min-width: 800px) {
+  .gallery-carousel-container {
+    max-width: 650px;
+  }
 }

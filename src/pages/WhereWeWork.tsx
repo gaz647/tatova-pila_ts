@@ -3,7 +3,7 @@ import LocationsMap from "../components/LocationsMap";
 
 const WhereWeWork: React.FC = () => {
   return (
-    <div className="page-container where-we-work dis-flex-column-center">
+    <div className="page-container">
       <div className="text-container">
         <div className="page-heading">Kde pracujeme ?</div>
 

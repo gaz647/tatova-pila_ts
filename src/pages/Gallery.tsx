@@ -54,18 +54,16 @@ const Gallery: React.FC = () => {
   const startIndex = Math.floor(Math.random() * 45);
 
   return (
-    <div className="gallery relative">
-      <div className="gallery-black-bacground-container">
-        <div className="gallery-carousel-container">
-          <ImageGallery
-            items={images}
-            showThumbnails={false}
-            showFullscreenButton={false}
-            autoPlay={true}
-            startIndex={startIndex}
-            swipeThreshold={10}
-          />
-        </div>
+    <div className="page-container darker-background relative">
+      <div className="gallery-carousel-container">
+        <ImageGallery
+          items={images}
+          showThumbnails={false}
+          showFullscreenButton={false}
+          autoPlay={true}
+          startIndex={startIndex}
+          swipeThreshold={10}
+        />
       </div>
     </div>
   );

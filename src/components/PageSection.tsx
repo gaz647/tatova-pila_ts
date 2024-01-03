@@ -18,13 +18,13 @@ const PageSection: React.FC<PageSectionProps> = ({
 
   const blurredImage =
     screenWidth && screenWidth < 500
-      ? `url(${image}_mobile-blurred.jpg)`
-      : `url(${image}_big-blurred.jpg)`;
+      ? `url(${image}-mobile-blurred.jpg)`
+      : `url(${image}-big-blurred.jpg)`;
 
   const mainImage =
     screenWidth && screenWidth < 500
-      ? `${image}_mobile.jpg`
-      : `${image}_big.jpg`;
+      ? `${image}-mobile.jpg`
+      : `${image}-big.jpg`;
 
   useEffect(() => {
     const imgElement: HTMLImageElement | null = document.querySelector(

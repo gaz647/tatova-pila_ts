@@ -62,13 +62,13 @@ function App() {
       >
         <WhatWeDontDo />
       </PageSection> */}
-      <PageSection id={"3"} image={"/where-we-work"} screenWidth={screenWidth}>
+      <PageSection id={"3"} image={"/pricing"} screenWidth={screenWidth}>
         <Pricing />
       </PageSection>
       <PageSection id={"4"} image={"/gallery"} screenWidth={screenWidth}>
         <Gallery />
       </PageSection>
-      <PageSection id={"5"} image={"/contact-us-2"} screenWidth={screenWidth}>
+      <PageSection id={"5"} image={"/contact-us"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
     </div>

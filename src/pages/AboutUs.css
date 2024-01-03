@@ -1,11 +1,5 @@
-.about-us {
-  min-height: 100dvh;
-  width: 100%;
+.darker-background {
   background-color: rgba(0, 0, 0, 0.363);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 0;
 }
 
 .greeting-container-2 {
