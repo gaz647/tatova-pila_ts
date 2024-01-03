@@ -66,7 +66,7 @@ function App() {
       <PageSection id={"3"} image={"/about-us"} screenWidth={screenWidth}>
         <Gallery_2 />
       </PageSection>
-      <PageSection id={"4"} image={"/contact-us"} screenWidth={screenWidth}>
+      <PageSection id={"4"} image={"/contact-us-2"} screenWidth={screenWidth}>
         <ContactUs />
       </PageSection>
     </div>
