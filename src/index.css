@@ -95,7 +95,7 @@ a {
 .page-container {
   min-height: 100dvh;
   width: 100%;
-  padding: 5rem 0 10rem 0;
+  padding: 4rem 0 10rem 0;
 }
 
 .page-container-last-page {
@@ -129,7 +129,7 @@ a {
   color: var(--white);
   letter-spacing: 1px;
   line-height: 1.5;
-  width: 85%;
+  width: 90%;
   max-width: 1200px;
   padding: 1.5rem;
   margin: 1.5rem 0;

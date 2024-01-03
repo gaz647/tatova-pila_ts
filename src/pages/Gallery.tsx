@@ -54,7 +54,7 @@ const Gallery: React.FC = () => {
   const startIndex = Math.floor(Math.random() * 45);
 
   return (
-    <div className=" gallery relative">
+    <div className="gallery relative">
       <div className="gallery-black-bacground-container">
         <div className="gallery-carousel-container">
           <ImageGallery

@@ -15,17 +15,14 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
     {
       id: "0",
       title: "O nás",
-      text: "Lorem ipsum dolores clan",
     },
     {
       id: "1",
       title: "Co děláme",
-      text: "Lorem ipsum dolores clan",
     },
     {
       id: "2",
       title: "Kde pracujeme",
-      text: "Lorem ipsum dolores clan",
     },
     // {
     //   id: "3",
@@ -34,13 +31,15 @@ const Navbar: React.FC<NavbarProps> = ({ currentVisiblePageId }) => {
     // },
     {
       id: "3",
-      title: "Galerie",
-      text: "Lorem ipsum dolores clan",
+      title: "Za kolik",
     },
     {
       id: "4",
+      title: "Galerie",
+    },
+    {
+      id: "5",
       title: "Kontakt",
-      text: "Lorem ipsum dolores clan",
     },
   ];
 
