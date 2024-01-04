@@ -1,0 +1,28 @@
+.change-page-btn-container {
+  display: none;
+}
+
+.previous {
+  top: 3.5rem;
+}
+
+.next {
+  bottom: 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .change-page-btn {
+    height: 3rem;
+    width: 3rem;
+  }
+  .change-page-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 166, 0, 0.705);
+
+    border: solid 3px red;
+    position: absolute;
+  }
+}

@@ -1,5 +1,7 @@
 import "./PageSection.css";
+import ChangePageBtn from "../components/ChangePageBtn";
 import { ReactNode, useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 interface PageSectionProps {
   image?: string;
@@ -12,6 +14,44 @@ const PageSection: React.FC<PageSectionProps> = ({
   screenWidth,
   children,
 }) => {
+  const currentPageUrl = useLocation().pathname;
+
+  const [previousPageBtnUrl, setPreviousPageBtnUrl] = useState<string | null>(
+    null
+  );
+  const [nextPageBtnUrl, setNextPageBtnUrl] = useState<string | null>(null);
+
+  // -------------------------
+  useEffect(() => {
+    const locations = [
+      "/",
+      "/co-delame",
+      "/kde-pracujeme",
+      "/za-kolik",
+      "/galerie",
+      "/kontakt",
+    ];
+
+    const currentPageUrlLocationsIndex = locations.indexOf(currentPageUrl);
+
+    if (currentPageUrlLocationsIndex && currentPageUrlLocationsIndex === 0) {
+      setNextPageBtnUrl(locations[currentPageUrlLocationsIndex + 1]);
+    } else if (
+      currentPageUrlLocationsIndex &&
+      currentPageUrlLocationsIndex === locations.length
+    ) {
+      setPreviousPageBtnUrl(locations[currentPageUrlLocationsIndex - 1]);
+    } else {
+      setPreviousPageBtnUrl(locations[currentPageUrlLocationsIndex - 1]);
+      setNextPageBtnUrl(locations[currentPageUrlLocationsIndex + 1]);
+    }
+
+    console.log("previous page", previousPageBtnUrl);
+    console.log("next page", nextPageBtnUrl);
+  }, [currentPageUrl, nextPageBtnUrl, previousPageBtnUrl]);
+
+  // -------------------------
+
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const blurredImage =
@@ -42,13 +82,12 @@ const PageSection: React.FC<PageSectionProps> = ({
     }
 
     return () => {
-      // Cleanup the event listener when the component unmounts
       imgElement?.removeEventListener("load", handleImageLoad);
     };
   }, []);
 
   return (
-    <section className="page-section">
+    <section className="page-section relative">
       {image && (
         <div
           className={`blur-container ${
@@ -66,7 +105,9 @@ const PageSection: React.FC<PageSectionProps> = ({
           />
         </div>
       )}
+      <ChangePageBtn type={"previous"} page={previousPageBtnUrl} />
       {children}
+      <ChangePageBtn type={"next"} page={nextPageBtnUrl} />
     </section>
   );
 };

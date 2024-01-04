@@ -1,6 +1,7 @@
 import "./Gallery.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
+import ChangePageBtn from "../components/ChangePageBtn";
 
 const Gallery: React.FC = () => {
   const images = [
@@ -55,6 +56,8 @@ const Gallery: React.FC = () => {
 
   return (
     <div className="page-container darker-background relative">
+      <ChangePageBtn type={"previous"} page={"/za-kolik"} />
+
       <div className="gallery-carousel-container">
         <ImageGallery
           items={images}
@@ -65,6 +68,7 @@ const Gallery: React.FC = () => {
           swipeThreshold={10}
         />
       </div>
+      <ChangePageBtn type={"next"} page={"/kontakt"} />
     </div>
   );
 };

@@ -7,8 +7,7 @@ import Footer from "../components/Footer";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="page-container-last-page relative">
-      <div id="fb-root"></div>
+    <div className="page-container relative">
       <div className="text-container">
         <div className="page-heading">Ozvěte se a my Vám rádi nařežeme!</div>
 

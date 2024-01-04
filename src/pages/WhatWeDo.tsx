@@ -2,7 +2,7 @@ import "./WhatWeDo.css";
 
 const WhatWeDo = () => {
   return (
-    <div className="page-container">
+    <div className="page-container relative">
       <div className="text-container">
         <div className="page-heading">Co děláme ?</div>
 
