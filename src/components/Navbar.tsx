@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         }`}
       >
         <NavLink
-          to="/o-nas"
+          to="/"
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",

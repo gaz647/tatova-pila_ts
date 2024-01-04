@@ -10,8 +10,11 @@ import {
 
 import Layout from "./Layout.tsx";
 
-import { PageSection } from "./componentsExports.ts";
-import { AboutUs } from "./componentsExports.ts";
+import PageSection from "./components/PageSection.tsx";
+import AboutUs from "./pages/AboutUs.tsx";
+
+import { LazyPageSection } from "./componentsExports.ts";
+// import { AboutUs } from "./componentsExports.ts";
 import { WhatWeDo } from "./componentsExports.ts";
 import { WhereWeWork } from "./componentsExports.ts";
 import { Pricing } from "./componentsExports.ts";
@@ -25,22 +28,20 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route
-        path="o-nas"
+        index
         element={
-          <React.Suspense fallback={<>kokot</>}>
-            <PageSection image={"/about-us"} screenWidth={screenWidth}>
-              <AboutUs />
-            </PageSection>
-          </React.Suspense>
+          <PageSection image={"/about-us"} screenWidth={screenWidth}>
+            <AboutUs />
+          </PageSection>
         }
       />
       <Route
         path="co-delame"
         element={
           <React.Suspense fallback={<>kokot</>}>
-            <PageSection image={"/what-we-do"} screenWidth={screenWidth}>
+            <LazyPageSection image={"/what-we-do"} screenWidth={screenWidth}>
               <WhatWeDo />
-            </PageSection>
+            </LazyPageSection>
           </React.Suspense>
         }
       />
@@ -48,9 +49,9 @@ const router = createBrowserRouter(
         path="kde-pracujeme"
         element={
           <React.Suspense fallback={<>kokot</>}>
-            <PageSection image={"/where-we-work"} screenWidth={screenWidth}>
+            <LazyPageSection image={"/where-we-work"} screenWidth={screenWidth}>
               <WhereWeWork />
-            </PageSection>
+            </LazyPageSection>
           </React.Suspense>
         }
       />
@@ -58,9 +59,9 @@ const router = createBrowserRouter(
         path="za-kolik"
         element={
           <React.Suspense fallback={<>kokot</>}>
-            <PageSection image={"/pricing"} screenWidth={screenWidth}>
+            <LazyPageSection image={"/pricing"} screenWidth={screenWidth}>
               <Pricing />
-            </PageSection>
+            </LazyPageSection>
           </React.Suspense>
         }
       />
@@ -68,9 +69,9 @@ const router = createBrowserRouter(
         path="galerie"
         element={
           <React.Suspense fallback={<>kokot</>}>
-            <PageSection image={"/gallery"} screenWidth={screenWidth}>
+            <LazyPageSection image={"/gallery"} screenWidth={screenWidth}>
               <Gallery />
-            </PageSection>
+            </LazyPageSection>
           </React.Suspense>
         }
       />
@@ -78,9 +79,9 @@ const router = createBrowserRouter(
         path="kontakt"
         element={
           <React.Suspense fallback={<>kokot</>}>
-            <PageSection image={"/contact-us"} screenWidth={screenWidth}>
+            <LazyPageSection image={"/contact-us"} screenWidth={screenWidth}>
               <ContactUs />
-            </PageSection>
+            </LazyPageSection>
           </React.Suspense>
         }
       />

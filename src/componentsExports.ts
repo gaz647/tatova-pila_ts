@@ -1,6 +1,8 @@
 import React from "react";
 
-export const PageSection = React.lazy(() => import("./components/PageSection"));
+export const LazyPageSection = React.lazy(
+  () => import("./components/PageSection")
+);
 
 export const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 export const WhatWeDo = React.lazy(() => import("./pages/WhatWeDo"));
