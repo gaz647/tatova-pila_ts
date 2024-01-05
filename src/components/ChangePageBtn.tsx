@@ -1,6 +1,8 @@
 import React from "react";
 import "./ChangePageBtn.css";
 import { Link } from "react-router-dom";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 interface ChangePageBtnProps {
   type: "previous" | "next";
@@ -12,16 +14,22 @@ const ChangePageBtn: React.FC<ChangePageBtnProps> = ({ type, page }) => {
     <>
       {type === "previous" && page !== null && page !== undefined && (
         <div className="change-page-btn-container previous">
-          <Link to={page}>
-            <button className="change-page-btn">.</button>
-          </Link>
+          <div className="change-page-btn">
+            <Link to={page}>
+              <MdKeyboardDoubleArrowUp />
+              {/* <button className="change-page-btn">.</button> */}
+            </Link>
+          </div>
         </div>
       )}
       {type === "next" && page !== null && page !== undefined && (
         <div className="change-page-btn-container next">
-          <Link to={page}>
-            <button className="change-page-btn">.</button>
-          </Link>
+          <div className="change-page-btn">
+            <Link to={page}>
+              <MdKeyboardDoubleArrowDown />
+              {/* <button className="change-page-btn">.</button> */}
+            </Link>
+          </div>
         </div>
       )}
     </>

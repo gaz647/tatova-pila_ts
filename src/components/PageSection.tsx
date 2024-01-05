@@ -1,4 +1,5 @@
 import "./PageSection.css";
+import React from "react";
 import ChangePageBtn from "../components/ChangePageBtn";
 import { ReactNode, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -14,6 +15,11 @@ const PageSection: React.FC<PageSectionProps> = ({
   screenWidth,
   children,
 }) => {
+  React.Children.forEach(children, (child) => {
+    console.log(`Dětská komponenta: ${child.type.name}`);
+  });
+
+  // -------------------------
   const currentPageUrl = useLocation().pathname;
 
   const [previousPageBtnUrl, setPreviousPageBtnUrl] = useState<string | null>(
@@ -21,7 +27,6 @@ const PageSection: React.FC<PageSectionProps> = ({
   );
   const [nextPageBtnUrl, setNextPageBtnUrl] = useState<string | null>(null);
 
-  // -------------------------
   useEffect(() => {
     const locations = [
       "/",
@@ -45,9 +50,6 @@ const PageSection: React.FC<PageSectionProps> = ({
       setPreviousPageBtnUrl(locations[currentPageUrlLocationsIndex - 1]);
       setNextPageBtnUrl(locations[currentPageUrlLocationsIndex + 1]);
     }
-
-    console.log("previous page", previousPageBtnUrl);
-    console.log("next page", nextPageBtnUrl);
   }, [currentPageUrl, nextPageBtnUrl, previousPageBtnUrl]);
 
   // -------------------------
