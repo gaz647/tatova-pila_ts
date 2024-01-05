@@ -15,10 +15,6 @@ const PageSection: React.FC<PageSectionProps> = ({
   screenWidth,
   children,
 }) => {
-  React.Children.forEach(children, (child) => {
-    console.log(`Dětská komponenta: ${child.type.name}`);
-  });
-
   // -------------------------
   const currentPageUrl = useLocation().pathname;
 
