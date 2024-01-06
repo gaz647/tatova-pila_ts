@@ -3,7 +3,7 @@ import LocationsMap from "../components/LocationsMap";
 
 const WhereWeWork: React.FC = () => {
   return (
-    <div className="page-container relative">
+    <div className="page-container padding relative fade-in-from-center">
       <div className="text-container">
         <div className="page-heading">Kde pracujeme ?</div>
 

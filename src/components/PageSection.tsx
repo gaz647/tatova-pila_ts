@@ -7,15 +7,18 @@ import { useLocation } from "react-router-dom";
 interface PageSectionProps {
   image?: string;
   screenWidth?: number;
+  scrollTo?: boolean;
   children: ReactNode;
 }
 
 const PageSection: React.FC<PageSectionProps> = ({
   image,
   screenWidth,
+  scrollTo,
   children,
 }) => {
-  // -------------------------
+  // ----------------- REDIRECTING BUTTONS
+  //
   const currentPageUrl = useLocation().pathname;
 
   const [previousPageBtnUrl, setPreviousPageBtnUrl] = useState<string | null>(
@@ -47,9 +50,11 @@ const PageSection: React.FC<PageSectionProps> = ({
       setNextPageBtnUrl(locations[currentPageUrlLocationsIndex + 1]);
     }
   }, [currentPageUrl, nextPageBtnUrl, previousPageBtnUrl]);
+  //
+  // -------------------------------------------------------------------------
 
-  // -------------------------
-
+  // ----------------- IMAGES
+  //
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const blurredImage =
@@ -62,27 +67,14 @@ const PageSection: React.FC<PageSectionProps> = ({
       ? `${image}-mobile.jpg`
       : `${image}-big.jpg`;
 
-  useEffect(() => {
-    const imgElement: HTMLImageElement | null = document.querySelector(
-      ".page-section .background-image"
-    );
+  //
+  // -------------------------------------------------------------------------
 
-    const handleImageLoad = () => {
-      setIsImageLoaded(true);
-    };
-
-    if (imgElement) {
-      if (imgElement.complete) {
-        setIsImageLoaded(true);
-      } else {
-        imgElement.addEventListener("load", handleImageLoad);
-      }
-    }
-
-    return () => {
-      imgElement?.removeEventListener("load", handleImageLoad);
-    };
-  }, []);
+  // ----------------- SCROLL POSITION SETTING
+  //
+  scrollTo && window.scrollTo(0, 64);
+  //
+  // -------------------------------------------------------------------------
 
   return (
     <section className="page-section relative">
@@ -98,8 +90,10 @@ const PageSection: React.FC<PageSectionProps> = ({
               isImageLoaded && "background-image-loaded"
             }`}
             src={mainImage}
-            alt=""
-            loading="lazy"
+            onLoad={() => {
+              setIsImageLoaded(true);
+              console.log("LOADED");
+            }}
           />
         </div>
       )}

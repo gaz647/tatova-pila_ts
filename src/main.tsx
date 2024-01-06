@@ -16,13 +16,20 @@ import PageSection from "./components/PageSection.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
-import { LazyPageSection } from "./componentsExports.ts";
+import {
+  LazyPageSection,
+  LazyWhatWeDo,
+  LazyWhereWeWork,
+  LazyPricing,
+  LazyGallery,
+  LazyContactUs,
+} from "./componentsExports.ts";
 
-import { LazyWhatWeDo } from "./componentsExports.ts";
-import { LazyWhereWeWork } from "./componentsExports.ts";
-import { LazyPricing } from "./componentsExports.ts";
-import { LazyGallery } from "./componentsExports.ts";
-import { LazyContactUs } from "./componentsExports.ts";
+// import WhatWeDo from "./pages/WhatWeDo.tsx";
+// import WhereWeWork from "./pages/WhereWeWork.tsx";
+// import Pricing from "./pages/Pricing.tsx";
+// import Gallery from "./pages/Gallery.tsx";
+// import ContactUs from "./pages/ContactUs.tsx";
 
 const screenWidth = window.innerWidth;
 
@@ -41,7 +48,11 @@ const router = createBrowserRouter(
         path="co-delame"
         element={
           <React.Suspense fallback={<Loader />}>
-            <LazyPageSection image={"/what-we-do"} screenWidth={screenWidth}>
+            <LazyPageSection
+              image={"/what-we-do"}
+              screenWidth={screenWidth}
+              scrollTo={true}
+            >
               <LazyWhatWeDo />
             </LazyPageSection>
           </React.Suspense>
@@ -51,7 +62,11 @@ const router = createBrowserRouter(
         path="kde-pracujeme"
         element={
           <React.Suspense fallback={<Loader />}>
-            <LazyPageSection image={"/where-we-work"} screenWidth={screenWidth}>
+            <LazyPageSection
+              image={"/where-we-work"}
+              screenWidth={screenWidth}
+              scrollTo={true}
+            >
               <LazyWhereWeWork />
             </LazyPageSection>
           </React.Suspense>
@@ -61,7 +76,11 @@ const router = createBrowserRouter(
         path="za-kolik"
         element={
           <React.Suspense fallback={<Loader />}>
-            <LazyPageSection image={"/pricing"} screenWidth={screenWidth}>
+            <LazyPageSection
+              image={"/pricing"}
+              screenWidth={screenWidth}
+              scrollTo={true}
+            >
               <LazyPricing />
             </LazyPageSection>
           </React.Suspense>
@@ -71,7 +90,11 @@ const router = createBrowserRouter(
         path="galerie"
         element={
           <React.Suspense fallback={<Loader />}>
-            <LazyPageSection image={"/gallery"} screenWidth={screenWidth}>
+            <LazyPageSection
+              image={"/gallery"}
+              screenWidth={screenWidth}
+              scrollTo={true}
+            >
               <LazyGallery />
             </LazyPageSection>
           </React.Suspense>
