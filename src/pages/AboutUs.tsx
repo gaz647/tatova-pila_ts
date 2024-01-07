@@ -31,11 +31,11 @@ const AboutUs: React.FC = () => {
         </div>
         <br />
         <div className="greeting-container-2">
-          <div className="page-heading">Vaše </div>
+          <div className="page-heading vase">Vaše </div>
           <img
+            className="greeting-container-2-logo"
             src={LogoCircle}
             alt="logo-tatova-pila"
-            style={{ height: "90px", marginLeft: "1.5rem" }}
           />
         </div>
       </div>

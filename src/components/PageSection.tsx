@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 interface PageSectionProps {
   image?: string;
   screenWidth?: number;
-  scrollTo?: boolean;
+  scrollTo?: number;
   children: ReactNode;
 }
 
@@ -72,7 +72,7 @@ const PageSection: React.FC<PageSectionProps> = ({
 
   // ----------------- SCROLL POSITION SETTING
   //
-  scrollTo && window.scrollTo(0, 64);
+  scrollTo && window.scrollTo(0, scrollTo);
   //
   // -------------------------------------------------------------------------
 

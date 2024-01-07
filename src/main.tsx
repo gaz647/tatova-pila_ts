@@ -39,7 +39,11 @@ const router = createBrowserRouter(
       <Route
         index
         element={
-          <PageSection image={"/about-us"} screenWidth={screenWidth}>
+          <PageSection
+            image={"/about-us"}
+            screenWidth={screenWidth}
+            scrollTo={0}
+          >
             <AboutUs />
           </PageSection>
         }
@@ -51,7 +55,7 @@ const router = createBrowserRouter(
             <LazyPageSection
               image={"/what-we-do"}
               screenWidth={screenWidth}
-              scrollTo={true}
+              scrollTo={64}
             >
               <LazyWhatWeDo />
             </LazyPageSection>
@@ -65,7 +69,7 @@ const router = createBrowserRouter(
             <LazyPageSection
               image={"/where-we-work"}
               screenWidth={screenWidth}
-              scrollTo={true}
+              scrollTo={64}
             >
               <LazyWhereWeWork />
             </LazyPageSection>
@@ -79,7 +83,7 @@ const router = createBrowserRouter(
             <LazyPageSection
               image={"/pricing"}
               screenWidth={screenWidth}
-              scrollTo={true}
+              scrollTo={64}
             >
               <LazyPricing />
             </LazyPageSection>
@@ -93,7 +97,7 @@ const router = createBrowserRouter(
             <LazyPageSection
               image={"/gallery"}
               screenWidth={screenWidth}
-              scrollTo={true}
+              scrollTo={64}
             >
               <LazyGallery />
             </LazyPageSection>
@@ -104,7 +108,11 @@ const router = createBrowserRouter(
         path="kontakt"
         element={
           <React.Suspense fallback={<Loader />}>
-            <LazyPageSection image={"/contact-us"} screenWidth={screenWidth}>
+            <LazyPageSection
+              image={"/contact-us"}
+              screenWidth={screenWidth}
+              scrollTo={64}
+            >
               <LazyContactUs />
             </LazyPageSection>
           </React.Suspense>
