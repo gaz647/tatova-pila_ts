@@ -38,6 +38,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       >
         <NavLink
           to="/"
+          onClick={handleBlur}
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",
@@ -50,6 +51,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </NavLink>
         <NavLink
           to="/co-delame"
+          onClick={handleBlur}
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",
@@ -62,6 +64,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </NavLink>
         <NavLink
           to="/kde-pracujeme"
+          onClick={handleBlur}
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",
@@ -74,6 +77,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </NavLink>
         <NavLink
           to="/za-kolik"
+          onClick={handleBlur}
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",
@@ -86,6 +90,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </NavLink>
         <NavLink
           to="/galerie"
+          onClick={handleBlur}
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",
@@ -98,6 +103,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </NavLink>
         <NavLink
           to="/kontakt"
+          onClick={handleBlur}
           className={({ isActive, isPending }) =>
             [
               isPending ? "pending" : "",
