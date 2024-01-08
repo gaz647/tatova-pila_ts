@@ -92,13 +92,13 @@ const PageSection: React.FC<PageSectionProps> = ({
             src={mainImage}
             onLoad={() => {
               setIsImageLoaded(true);
-              console.log("LOADED");
             }}
           />
         </div>
       )}
       <ChangePageBtn type={"previous"} page={previousPageBtnUrl} />
-      {children}
+      {isImageLoaded && <>{children}</>}
+
       <ChangePageBtn type={"next"} page={nextPageBtnUrl} />
     </section>
   );
