@@ -97,8 +97,7 @@ const PageSection: React.FC<PageSectionProps> = ({
         </div>
       )}
       <ChangePageBtn type={"previous"} page={previousPageBtnUrl} />
-      {isImageLoaded && <>{children}</>}
-
+      {children}
       <ChangePageBtn type={"next"} page={nextPageBtnUrl} />
     </section>
   );
