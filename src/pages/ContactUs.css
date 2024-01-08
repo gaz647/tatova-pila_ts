@@ -8,6 +8,7 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .slide-in-right-contact-1 {
