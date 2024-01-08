@@ -31,7 +31,6 @@ const AboutUs: React.FC = () => {
         </div>
         <br />
         <div className="greeting-container-2">
-          <div className="vase">Vaše </div>
           <img
             className="greeting-container-2-logo"
             src={LogoCircle}
