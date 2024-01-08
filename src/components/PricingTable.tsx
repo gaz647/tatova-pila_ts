@@ -2,7 +2,7 @@ import "./PricingTable.css";
 
 const PricingTable = () => {
   return (
-    <table id="pricing-table">
+    <table id="pricing-table" className="slide-in-right-pricing-table">
       <thead>
         <tr>
           <th></th>

@@ -12,4 +12,20 @@
 
 .greeting-container-2-logo {
   height: 200px;
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in-from-center-logo 1s linear 2.5s forwards;
+}
+
+@keyframes fade-in-from-center-logo {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
 }

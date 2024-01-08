@@ -7,26 +7,28 @@ import Footer from "../components/Footer";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="page-container padding relative fade-in-from-center">
-      <div className="text-container">
-        <div className="page-heading">Ozvěte se a my Vám rádi nařežeme!</div>
+    <div className="page-container padding relative ">
+      <div className="text-container fade-in-from-center">
+        <div className="page-heading slide-in-left-heading">
+          Ozvěte se a my Vám rádi nařežeme!
+        </div>
 
         <div className="contact-us-contact-cards-container">
-          <div className="contact-card-1">
+          <div className="slide-in-right-contact-1">
             <ContactCard
               image={HonzaImage}
               name={"Honza"}
               phone="+420 721 223 677"
             />
           </div>
-          <div className="contact-card-2">
+          <div className="slide-in-right-contact-2">
             <ContactCard
               image={MichalImage}
               name={"Michal"}
               phone="+420 608 416 830"
             />
           </div>
-          <div className="contact-card-3">
+          <div className="slide-in-right-contact-3">
             <ContactCard image={EmailImage} email="tatovapila@gmail.com" />
           </div>
         </div>

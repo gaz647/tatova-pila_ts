@@ -122,8 +122,9 @@ a {
   transform: translateX(0);
   opacity: 0;
   visibility: hidden;
-  animation: slide-in-left 1s linear 0.2s forwards;
 }
+
+/* ---------------------------------------------- */
 
 @keyframes slide-in-left {
   0% {
@@ -138,6 +139,94 @@ a {
     visibility: visible;
   }
 }
+
+.slide-in-left-heading {
+  animation: slide-in-left 1s linear 0.2s forwards;
+}
+
+/* ---------------------------------------------- */
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.slide-in-right-text-sentence-1 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 1s forwards;
+}
+
+.slide-in-right-text-sentence-2 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 1.3s forwards;
+}
+
+.slide-in-right-text-sentence-3 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 1.6s forwards;
+}
+
+.slide-in-right-text-sentence-4 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 1.9s forwards;
+}
+
+.slide-in-right-text-sentence-5 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 2.1s forwards;
+}
+
+.slide-in-right-text-sentence-6 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 2.4s forwards;
+}
+
+.slide-in-right-text-sentence-7 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 2.7s forwards;
+}
+
+/* ---------------------------------------------- */
+
+@keyframes fade-in-from-center {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-from-center {
+  animation: fade-in-from-center 0.5s ease-in;
+}
+
+/* ---------------------------------------------- */
 
 .page-sub-heading {
   font-size: var(--fs-h2);

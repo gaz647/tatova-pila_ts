@@ -50,7 +50,7 @@ const LocationsMap = () => {
 
   return (
     <APIProvider apiKey={apiKey}>
-      <div className="locations-map-container">
+      <div className="locations-map-container slide-in-bottom-location-map">
         <Map
           center={position.center}
           zoom={9}

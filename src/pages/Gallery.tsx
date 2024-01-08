@@ -7,7 +7,7 @@ const Gallery: React.FC = () => {
   const startIndex = Math.floor(Math.random() * 45);
 
   return (
-    <div className="page-container  darker-background relative fade-in-from-center">
+    <div className="page-container darker-background relative">
       <div className="gallery-carousel-container">
         <ImageGallery
           items={images}

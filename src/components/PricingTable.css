@@ -7,6 +7,23 @@
   overflow: hidden;
   font-size: var(--fs-table-text);
   border: none;
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right-pricing-table 1s linear 0.85s forwards;
+}
+
+@keyframes slide-in-right-pricing-table {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .pricing-table.rounded-corners {
