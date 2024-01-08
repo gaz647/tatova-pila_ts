@@ -11,11 +11,15 @@
 }
 
 .greeting-container-2-logo {
-  height: "150px";
-  margin-left: "1.5rem";
+  height: 200px;
 }
 
 .vase {
+  font-size: var(2rem);
+  font-weight: bold;
+  margin: 1.5rem 0 3rem 0;
+  text-shadow: var(--text-shadow-black);
+  text-align: center;
   transform: skew(0deg, -15deg);
   margin-right: 1rem;
   margin-top: 4rem;

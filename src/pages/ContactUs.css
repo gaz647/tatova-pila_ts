@@ -9,3 +9,38 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
+.contact-card-1 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 1.4s forwards;
+}
+
+.contact-card-2 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 1.9s forwards;
+}
+
+.contact-card-3 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 2.4s forwards;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

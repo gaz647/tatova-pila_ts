@@ -12,17 +12,23 @@ const ContactUs: React.FC = () => {
         <div className="page-heading">Ozvěte se a my Vám rádi nařežeme!</div>
 
         <div className="contact-us-contact-cards-container">
-          <ContactCard
-            image={HonzaImage}
-            name={"Honza"}
-            phone="+420 721 223 677"
-          />
-          <ContactCard
-            image={MichalImage}
-            name={"Michal"}
-            phone="+420 608 416 830"
-          />
-          <ContactCard image={EmailImage} email="tatovapila@gmail.com" />
+          <div className="contact-card-1">
+            <ContactCard
+              image={HonzaImage}
+              name={"Honza"}
+              phone="+420 721 223 677"
+            />
+          </div>
+          <div className="contact-card-2">
+            <ContactCard
+              image={MichalImage}
+              name={"Michal"}
+              phone="+420 608 416 830"
+            />
+          </div>
+          <div className="contact-card-3">
+            <ContactCard image={EmailImage} email="tatovapila@gmail.com" />
+          </div>
         </div>
       </div>
       <Footer />
