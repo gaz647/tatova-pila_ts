@@ -10,7 +10,7 @@ const ContactUs: React.FC = () => {
     <div className="page-container padding relative ">
       <div className="text-container fade-in-from-center">
         <div className="page-heading slide-in-left-heading">
-          Ozvěte se a my Vám rádi nařežeme!
+          Ozvěte se a&nbsp;my Vám rádi nařežeme!
         </div>
 
         <div className="contact-us-contact-cards-container">

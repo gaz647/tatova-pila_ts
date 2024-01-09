@@ -6,7 +6,7 @@ const AboutUs: React.FC = () => {
     <div className="page-container padding-first-page darker-background relative">
       <div className="text-container fade-in-from-center">
         <div className="page-heading slide-in-left-heading">
-          Jsme pilaři a jsme z Litomyšle
+          Jsme pilaři a&nbsp;jsme z Litomyšle
         </div>
 
         <div className="text-container-text">
