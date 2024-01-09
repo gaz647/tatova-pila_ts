@@ -24,7 +24,7 @@
   .change-page-btn {
     font-size: 2.5rem;
     z-index: 998;
-    animation: scale 2s alternate infinite linear;
+    animation: scale 1s alternate infinite linear;
   }
 
   @keyframes scale {
