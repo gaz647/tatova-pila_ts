@@ -1,8 +1,12 @@
 import "./WhatWeDo.css";
+import { Helmet } from "react-helmet-async";
 
 const WhatWeDo = () => {
   return (
     <div className="page-container padding relative fade-in-from-center">
+      <Helmet>
+        <title>Co děláme</title>
+      </Helmet>
       <div className="text-container">
         <div className="page-heading slide-in-left-heading">Co děláme ?</div>
 
