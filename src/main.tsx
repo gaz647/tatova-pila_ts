@@ -25,12 +25,6 @@ import {
   LazyContactUs,
 } from "./componentsExports.ts";
 
-// import WhatWeDo from "./pages/WhatWeDo.tsx";
-// import WhereWeWork from "./pages/WhereWeWork.tsx";
-// import Pricing from "./pages/Pricing.tsx";
-// import Gallery from "./pages/Gallery.tsx";
-// import ContactUs from "./pages/ContactUs.tsx";
-
 const screenWidth = window.innerWidth;
 
 const router = createBrowserRouter(
