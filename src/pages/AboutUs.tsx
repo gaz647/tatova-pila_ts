@@ -7,7 +7,6 @@ const AboutUs: React.FC = () => {
     <div className="page-container padding-first-page darker-background relative">
       <Helmet>
         <title>O nás</title>
-        <meta name="description" content="Základní informace"></meta>
       </Helmet>
       <div className="text-container fade-in-from-center">
         <div className="page-heading slide-in-left-heading">
