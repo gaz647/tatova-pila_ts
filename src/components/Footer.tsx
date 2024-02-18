@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
           className="made-in-litomysl"
         />
       </a>
-      <a href="https://gaz647.eu/" className="gaz-647">
-        gaz647.eu
+      <a href="https://gaz647.net/" className="gaz-647">
+        gaz647.net
       </a>
     </section>
   );
