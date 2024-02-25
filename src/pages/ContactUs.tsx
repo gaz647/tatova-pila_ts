@@ -13,9 +13,9 @@ const ContactUs: React.FC = () => {
         <title>Kontakt</title>
       </Helmet>
       <div className="text-container fade-in-from-center">
-        <div className="page-heading slide-in-left-heading">
+        <h1 className="page-heading slide-in-left-heading">
           Ozvěte se a&nbsp;my Vám rádi nařežeme!
-        </div>
+        </h1>
 
         <div className="contact-us-contact-cards-container">
           <div className="slide-in-right-contact-1">

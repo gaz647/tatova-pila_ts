@@ -18,8 +18,10 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div className="navbar" onBlur={handleBlur} tabIndex={0}>
-      <Link to={"/"} className="navbar-logo-container">
-        <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
+      <div className="navbar-logo-container">
+        <Link to={"/"}>
+          <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
+        </Link>
 
         <button
           className="navbar-mobile-icon-container"
@@ -29,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         >
           <RxHamburgerMenu className="navbar-mobile-icon" />
         </button>
-      </Link>
+      </div>
 
       <nav
         className={`navbar-navlinks-container ${

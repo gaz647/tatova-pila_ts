@@ -9,17 +9,15 @@ const WhereWeWork: React.FC = () => {
         <title>Kde pracujeme</title>
       </Helmet>
       <div className="text-container fade-in-from-center">
-        <div className="page-heading slide-in-left-heading">
-          Kde pracujeme ?
-        </div>
+        <h1 className="page-heading slide-in-left-heading">Kde pracujeme ?</h1>
 
         <div className="text-container-text">
-          <div className="text-container-text-sentence slide-in-right-text-sentence-1">
+          <p className="text-container-text-sentence slide-in-right-text-sentence-1">
             Žijeme v Litomyšli, takže náš rajón je Svitavsko.
-          </div>
-          <div className="text-container-text-sentence slide-in-right-text-sentence-2">
+          </p>
+          <p className="text-container-text-sentence slide-in-right-text-sentence-2">
             Naše oblíbené lokality můžete vidět níže na mapě.
-          </div>
+          </p>
         </div>
       </div>
       <LocationsMap />

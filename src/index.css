@@ -80,7 +80,7 @@ p {
 }
 
 h1 {
-  font-size: var(--fs-h1);
+  all: unset;
 }
 
 h2 {
@@ -126,6 +126,9 @@ a {
   transform: translateX(0);
   opacity: 0;
   visibility: hidden;
+  display: block;
+  text-align: center;
+  margin: 1rem;
 }
 
 /* ---------------------------------------------- */
@@ -268,17 +271,6 @@ a {
 
 .text-container-text-sentence {
   padding: var(--text-container-text-sentence-padding);
-}
-
-.text-container h1,
-h2 {
-  display: block;
-  text-align: center;
-  margin: 1rem;
-}
-
-.text-container h1 {
-  font-size: var(--fs-h1);
 }
 
 .text-container ul {

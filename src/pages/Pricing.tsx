@@ -9,9 +9,9 @@ const Pricing: React.FC = () => {
         <title>Za kolik</title>
       </Helmet>
       <div className="text-container">
-        <div className="page-heading slide-in-left-heading">
+        <h1 className="page-heading slide-in-left-heading">
           Ceník pořezu výřezů/kulatiny - 1CBM
-        </div>
+        </h1>
         <br />
         <PricingTable />
       </div>
