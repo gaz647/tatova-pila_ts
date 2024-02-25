@@ -19,22 +19,22 @@ const ChangePageBtn: React.FC<ChangePageBtnProps> = ({ type, page }) => {
   return (
     <>
       {type === "previous" && page !== null && page !== undefined && (
-        <div className="change-page-btn-container previous">
+        <button className="change-page-btn-container previous">
           <div className="change-page-btn">
             <div onClick={() => handleChangePage(page)}>
               <MdKeyboardDoubleArrowUp />
             </div>
           </div>
-        </div>
+        </button>
       )}
       {type === "next" && page !== null && page !== undefined && (
-        <div className="change-page-btn-container next">
+        <button className="change-page-btn-container next">
           <div className="change-page-btn">
             <div onClick={() => handleChangePage(page)}>
               <MdKeyboardDoubleArrowDown />
             </div>
           </div>
-        </div>
+        </button>
       )}
     </>
   );

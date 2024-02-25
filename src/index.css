@@ -72,8 +72,7 @@ html {
 }
 
 button {
-  background-color: inherit;
-  border: none;
+  all: unset;
 }
 
 p {
