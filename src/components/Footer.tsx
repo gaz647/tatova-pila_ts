@@ -3,7 +3,7 @@ import LogoMadeInLitomysl from "../assets/pictures/made-in-litomysl-white.png";
 
 const Footer: React.FC = () => {
   return (
-    <section className="footer">
+    <footer className="footer">
       <a href="https://madeinlitomysl.cz/">
         <img
           src={LogoMadeInLitomysl}
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <a href="https://gaz647.net/" className="gaz-647">
         gaz647.net
       </a>
-    </section>
+    </footer>
   );
 };
 

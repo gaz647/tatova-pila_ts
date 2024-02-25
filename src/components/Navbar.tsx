@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../assets/pictures/logo-white-horizontal.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface NavbarProps {}
 
@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div className="navbar" onBlur={handleBlur} tabIndex={0}>
-      <div className="navbar-logo-container">
+      <Link to={"/"} className="navbar-logo-container">
         <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
 
         <button
@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         >
           <RxHamburgerMenu className="navbar-mobile-icon" />
         </button>
-      </div>
+      </Link>
 
       <nav
         className={`navbar-navlinks-container ${
