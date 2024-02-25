@@ -17,21 +17,21 @@ const Navbar: React.FC<NavbarProps> = () => {
   };
 
   return (
-    <nav className="navbar" onBlur={handleBlur} tabIndex={0}>
+    <div className="navbar" onBlur={handleBlur} tabIndex={0}>
       <div className="navbar-logo-container">
         <img src={Logo} alt="logo-tatova-pila" className="navbar-logo" />
 
-        <div
+        <button
           className="navbar-mobile-icon-container"
           onClick={() => {
             setIsVisible(!isVisible);
           }}
         >
           <RxHamburgerMenu className="navbar-mobile-icon" />
-        </div>
+        </button>
       </div>
 
-      <div
+      <nav
         className={`navbar-navlinks-container ${
           isVisible && "navbar-navlinks-container-visible"
         }`}
@@ -114,8 +114,8 @@ const Navbar: React.FC<NavbarProps> = () => {
         >
           Kontakt
         </NavLink>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

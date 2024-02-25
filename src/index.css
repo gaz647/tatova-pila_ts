@@ -71,6 +71,11 @@ html {
   letter-spacing: 0.01rem;
 }
 
+button {
+  background-color: inherit;
+  border: none;
+}
+
 p {
   font-size: var(--fs-text);
 }
