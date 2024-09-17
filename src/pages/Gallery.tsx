@@ -3,9 +3,16 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import { Helmet } from "react-helmet-async";
 import ImageGallery from "react-image-gallery";
 import { images } from "../galleryImagesData";
+import { useParams } from "react-router-dom";
 
 const Gallery: React.FC = () => {
-  const startIndex = Math.floor(Math.random() * 45);
+  const urlParam = useParams();
+  const { myParam } = urlParam;
+
+  const startIndex =
+    myParam && myParam.includes("woodChipper")
+      ? 45
+      : Math.floor(Math.random() * 45);
 
   return (
     <div className="page-container darker-background relative">

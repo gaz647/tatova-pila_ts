@@ -33,6 +33,7 @@ const PageSection: React.FC<PageSectionProps> = ({
       "/kde-pracujeme",
       "/za-kolik",
       "/galerie",
+      "/pronajem-stepkovace",
       "/kontakt",
     ];
 

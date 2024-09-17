@@ -90,6 +90,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         >
           Za kolik
         </NavLink>
+
         <NavLink
           to="/galerie"
           onClick={handleBlur}
@@ -102,6 +103,19 @@ const Navbar: React.FC<NavbarProps> = () => {
           }
         >
           Galerie
+        </NavLink>
+        <NavLink
+          to="/pronajem-stepkovace"
+          onClick={handleBlur}
+          className={({ isActive, isPending }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "navbar-navlink-active" : "",
+              "navbar-navlink",
+            ].join(" ")
+          }
+        >
+          Pronájem štěpkovače
         </NavLink>
         <NavLink
           to="/kontakt"

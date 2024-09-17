@@ -1,4 +1,7 @@
 :root {
+  /* BORDER RADIUS */
+  --border-radius-main: 12px;
+
   /* COLORS */
   --white: rgb(245, 245, 245);
   --white-transparent: rgba(201, 200, 200, 0.459);
@@ -18,6 +21,9 @@
 
   /* TEXT SHADOWS */
   --text-shadow-black: 2px 1px 4px rgba(0, 0, 0, 0.6);
+
+  /* IMAGE SHADOWS */
+  --image-shadow-black: 0px 0px 40px -20px rgb(0, 0, 0);
 
   /* CONTACT CARD SIZES */
   --contact-card-image-size: 8rem;
@@ -216,6 +222,13 @@ a {
   animation: slide-in-right 0.8s linear 2.7s forwards;
 }
 
+.slide-in-right-text-sentence-8 {
+  transform: translateX(0);
+  opacity: 0;
+  visibility: hidden;
+  animation: slide-in-right 0.8s linear 3s forwards;
+}
+
 /* ---------------------------------------------- */
 
 @keyframes fade-in-from-center {
@@ -247,7 +260,7 @@ a {
   backdrop-filter: blur(2px) saturate(180%);
   --webkit-backdrop-filter: blur(2px) saturate(180%);
   background-color: rgba(87, 102, 102, 0.64);
-  border-radius: 12px;
+  border-radius: var(--border-radius-main);
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: var(--white);
   letter-spacing: 1px;

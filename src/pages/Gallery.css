@@ -1,8 +1,8 @@
 .gallery-carousel-container {
-  border: solid 8px var(--white);
-  /* max-height: 10%; */
-  max-width: 85%;
-  background-color: black;
+  border-radius: var(--border-radius-main);
+  box-shadow: var(--image-shadow-black);
+  width: 90%;
+  max-width: 720px;
   animation: fade-in-from-center-gallery 1s linear;
 }
 
@@ -14,11 +14,5 @@
   100% {
     opacity: 1;
     transform: scale(1) rotate(360deg);
-  }
-}
-
-@media (min-width: 800px) {
-  .gallery-carousel-container {
-    max-width: 650px;
   }
 }

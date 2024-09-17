@@ -1,0 +1,33 @@
+.wood-chipper-main-pic-container {
+  width: 100%;
+  margin: 2rem auto 2.5rem auto;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  animation: fade-in-from-center-logo 1s linear 1.8s forwards;
+}
+
+.wood-chipper-main-pic-container img {
+  border-radius: var(--border-radius-main);
+  box-shadow: var(--image-shadow-black);
+  width: 100%;
+  max-width: 720px;
+}
+
+.wood-chipper-gallery-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@keyframes fade-in-from-center-logo {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}

@@ -63,3 +63,7 @@ table.rounded-corners td {
   padding: 0.5rem;
   border: none;
 }
+
+.td-hidden {
+  visibility: hidden;
+}

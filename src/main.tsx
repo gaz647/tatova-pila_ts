@@ -23,6 +23,7 @@ import {
   LazyPricing,
   LazyGallery,
   LazyContactUs,
+  LazyWoodChipperRental,
 } from "./componentsExports.ts";
 
 import { HelmetProvider } from "react-helmet-async";
@@ -96,6 +97,34 @@ const router = createBrowserRouter(
               scrollTo={64}
             >
               <LazyGallery />
+            </LazyPageSection>
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="galerie/:myParam"
+        element={
+          <React.Suspense fallback={<Loader />}>
+            <LazyPageSection
+              image={"/gallery"}
+              screenWidth={screenWidth}
+              scrollTo={64}
+            >
+              <LazyGallery />
+            </LazyPageSection>
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="pronajem-stepkovace"
+        element={
+          <React.Suspense fallback={<Loader />}>
+            <LazyPageSection
+              image={"/wood-chipper-rental"}
+              screenWidth={screenWidth}
+              scrollTo={64}
+            >
+              <LazyWoodChipperRental />
             </LazyPageSection>
           </React.Suspense>
         }

@@ -44,4 +44,7 @@ export const images = [
   { original: "/gallery-bg-image-43_2.jpg" },
   { original: "/gallery-bg-image-44_2.jpg" },
   { original: "/gallery-bg-image-45_2.jpg" },
+  { original: "/gallery-bg-image-46_2.jpg" },
+  { original: "/gallery-bg-image-47_2.jpg" },
+  { original: "/gallery-bg-image-48_2.jpg" },
 ];
