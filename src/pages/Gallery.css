@@ -2,7 +2,7 @@
   border-radius: var(--border-radius-main);
   box-shadow: var(--image-shadow-black);
   width: 90%;
-  max-width: 720px;
+  max-width: 600px;
   animation: fade-in-from-center-gallery 1s linear;
 }
 
