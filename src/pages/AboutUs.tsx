@@ -46,6 +46,16 @@ const AboutUs: React.FC = () => {
             alt="logo-tatova-pila"
           />
         </div>
+        <br />
+        <iframe
+          className="yt-video"
+          src="https://www.youtube-nocookie.com/embed/pJ8_mqcVVrQ?si=mewUhgtuPtwwKf2U"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </main>
     </div>
   );
