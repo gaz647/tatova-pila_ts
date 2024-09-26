@@ -1,27 +1,48 @@
 .footer {
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   background-color: var(--navbar-footer-black);
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  color: var(--white);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer a {
-  display: block;
-  max-height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  color: var(--white);
 }
 
-.made-in-litomysl,
-.gaz-647 {
-  height: 2rem;
+.made-in-litomysl {
+  height: 0.9rem;
+}
+
+.bez-starosti {
+  height: 1.5rem;
+}
+
+.gaz647-logo {
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.35rem;
+}
+
+.gaz47-logo-planet {
+  color: rgb(50, 50, 50);
+}
+
+.gaz647-logo-text {
+  color: rgb(50, 50, 50);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+
+.gaz-logo-text-bold {
+  font-weight: bold;
+  font-size: 1rem;
 }
