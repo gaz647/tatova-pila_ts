@@ -101,7 +101,7 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
-      <Route
+      {/* <Route
         path="galerie/:myParam"
         element={
           <React.Suspense fallback={<Loader />}>
@@ -114,7 +114,7 @@ const router = createBrowserRouter(
             </LazyPageSection>
           </React.Suspense>
         }
-      />
+      /> */}
       <Route
         path="pronajem-stepkovace"
         element={
