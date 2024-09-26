@@ -56,7 +56,7 @@
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
   .navbar {
     flex-direction: column;
     align-items: center;
