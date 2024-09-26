@@ -21,13 +21,28 @@
   aspect-ratio: 16 / 9;
   width: 100%;
   max-width: 600px;
-
   margin: 2rem auto;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in-from-center-yt 1s linear 3.15s forwards;
 }
 
 @keyframes fade-in-from-center-logo {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in-from-center-yt {
   0% {
     opacity: 0;
     visibility: hidden;
