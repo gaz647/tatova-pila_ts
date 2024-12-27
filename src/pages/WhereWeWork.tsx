@@ -1,13 +1,10 @@
 import "./WhereWeWork.css";
-import { Helmet } from "react-helmet-async";
+
 import LocationsMap from "../components/LocationsMap";
 
 const WhereWeWork: React.FC = () => {
   return (
     <div className="page-container padding relative ">
-      <Helmet>
-        <title>Kde pracujeme</title>
-      </Helmet>
       <div className="text-container fade-in-from-center">
         <h1 className="page-heading slide-in-left-heading">Kde pracujeme ?</h1>
 

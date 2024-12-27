@@ -1,6 +1,5 @@
 import "./Gallery.css";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Helmet } from "react-helmet-async";
 import ImageGallery from "react-image-gallery";
 import { images } from "../galleryImagesData";
 import { useParams } from "react-router-dom";
@@ -16,9 +15,6 @@ const Gallery: React.FC = () => {
 
   return (
     <div className="page-container darker-background relative">
-      <Helmet>
-        <title>Galerie</title>
-      </Helmet>
       <div className="gallery-carousel-container">
         <ImageGallery
           items={images}

@@ -1,14 +1,11 @@
 import "./WoodChipperRental.css";
-import { Helmet } from "react-helmet-async";
+
 import woodChipperMainPic from "../assets/pictures/wood-chipper-main.jpg";
 import { Link } from "react-router-dom";
 
 const WoodChipperRental = () => {
   return (
     <div className="page-container padding relative fade-in-from-center">
-      <Helmet>
-        <title>Pronájem štěpkovače</title>
-      </Helmet>
       <div className="text-container">
         <h1 className="page-heading slide-in-left-heading">
           Pronájem štěpkovače

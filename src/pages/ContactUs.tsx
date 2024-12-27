@@ -1,5 +1,4 @@
 import "./ContactUs.css";
-import { Helmet } from "react-helmet-async";
 import ContactCard from "../components/ContactCard";
 import HonzaImage from "../assets/pictures/profile-image-1.jpg";
 import MichalImage from "../assets/pictures/profile-image-2.jpg";
@@ -9,9 +8,6 @@ import Footer from "../components/Footer";
 const ContactUs: React.FC = () => {
   return (
     <div className="page-container padding relative ">
-      <Helmet>
-        <title>Kontakt</title>
-      </Helmet>
       <div className="text-container fade-in-from-center">
         <h1 className="page-heading slide-in-left-heading">
           Ozvěte se a&nbsp;my Vám rádi nařežeme!

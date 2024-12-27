@@ -1,13 +1,9 @@
 import "./AboutUs.css";
 import LogoCircle from "../assets/pictures/logo-white-circle.png";
-import { Helmet } from "react-helmet-async";
 
 const AboutUs: React.FC = () => {
   return (
     <div className="page-container padding-first-page darker-background relative">
-      <Helmet>
-        <title>O nás</title>
-      </Helmet>
       <main className="text-container fade-in-from-center">
         <h1 className="page-heading slide-in-left-heading">
           Jsme pilaři a&nbsp;jsme z Litomyšle

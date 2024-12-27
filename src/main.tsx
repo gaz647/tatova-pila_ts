@@ -26,8 +26,6 @@ import {
   LazyWoodChipperRental,
 } from "./componentsExports.ts";
 
-import { HelmetProvider } from "react-helmet-async";
-
 const screenWidth = window.innerWidth;
 
 const router = createBrowserRouter(
@@ -150,8 +148,6 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <RouterProvider router={router} />
-    </HelmetProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
